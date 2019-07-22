@@ -1,0 +1,18 @@
+{
+  "name": "bryanlrobinson.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eleventy": "^0.2.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3"
+  }
+}
