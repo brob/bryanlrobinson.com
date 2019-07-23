@@ -13,9 +13,13 @@
         <a href="/blog">Blog</a>
     </nav>
 
+
     <section class="banner">
-        <h1>{{ title }}</h1>
-        {% if subhead %}<h2>{{ subhead }}</h2>{% endif %}
+        {% block banner %}
+            <h1>{{ title }}</h1>
+            {% if subhead %}<h2>{{ subhead }}</h2>{% endif %}
+        {% endblock banner %}
+
     </section>
 
     {% block mainContent %}

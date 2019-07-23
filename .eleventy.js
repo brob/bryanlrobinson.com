@@ -7,6 +7,9 @@ module.exports = function(config) {
         return collection.getFilteredByTag('posts').reverse();
     });
 
+    config.addFilter("limit", (array, limit) => array.slice(0, limit));
+
+
   return {
     dir: {
       input: 'src',
