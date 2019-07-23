@@ -8,6 +8,7 @@ module.exports = function(config) {
     });
 
     config.addFilter("limit", (array, limit) => array.slice(0, limit));
+    config.addPassthroughCopy("_redirects");
 
 
   return {
