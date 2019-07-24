@@ -15,7 +15,6 @@ adSpace:
   linkText: Start Learning Now!
   linkUrl: https://store.codecontemporary.com/practical-css-grid
 ---
-<h1>{{page.fileSlug}}</h1>
 
 ![11ty Plugin banner image where a plug is coming out of the 11ty logo](/images/eleventy-plugin-banner@2x.jpg)
 

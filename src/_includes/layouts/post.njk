@@ -1,1 +1,37 @@
 {% extends "layouts/base.njk" %}
+
+{% block banner %}
+<h1 class="banner__title">{{ title }}</h1>
+{% if subhead %}
+    <h2>{{ subhead }}</h2>
+{% endif %}
+<time datetime="{{ date | date('YYYY-MM-DD') }}">{{ date | date('MMMM D, YYYY') }}</time>
+{% if categories %}
+<ul class="category-list">
+{% for category in categories %}
+<li class="category-list__item"><a class="category-list__link" href="/blog/category/{{ category }}">{{ category }}</a></li>
+
+{% endfor %}
+</ul>
+{% endif %}
+{% endblock banner %}
+
+{% block mainContent %}
+
+<section class="blog-content">
+    {{ content | safe }}
+
+    <aside class="blog-related">
+        <h3>Related stuff</h3>
+        <ul class="related-list">
+            {% for post in collections.posts | limit(3) %}
+            <li class="related-list__item">
+                <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </aside>
+</section>
+
+
+{% endblock %}
