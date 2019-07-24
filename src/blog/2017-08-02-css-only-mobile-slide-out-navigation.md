@@ -1,5 +1,5 @@
 ---
-title: How To: A CSS-Only Mobile Off Canvas Navigation
+title: "How To: A CSS-Only Mobile Off Canvas Navigation"
 categories:
 - CSS Can Do What
 - Development
