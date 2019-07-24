@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Modern CSS&#58; Four Things Every Developer and Designer Should Know About CSS
+title: Modern CSS: Four Things Every Developer and Designer Should Know About CSS
 categories:
   - development
   - design

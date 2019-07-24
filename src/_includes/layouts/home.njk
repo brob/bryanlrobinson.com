@@ -4,13 +4,15 @@
 {% block bannerClass %}banner--homepage{% endblock %}
 {% block banner %}
     <img class="homepage-headshot" src="/images/headshot.jpg" alt="Bryan's smiling face, glasses slightly askew">
-    <h1>{{ title }}</h1>
-    <h2>{{ headline }}</h2>
+    <h1 class="homepage-title">{{ title }}</h1>
+    <h2 class="homepage-headline">{{ headline }}</h2>
     <p>{{ description }}</p>
+    <a href="#" class="button">Work with Me</a>
 {% endblock banner %}
 
 {% block mainContent %}
 <section class="home-articles">
+    <h3>Latest Articles</h3>
     {% for post in featuredPosts %}
     {% include "article-promo.html" %}
     {% endfor %}

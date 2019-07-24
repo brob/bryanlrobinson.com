@@ -1,5 +1,5 @@
 ---
-title: CSS Tip&#58; Use rotate() and skew() together to introduce some clean punk rock to your CSS
+title: CSS Tip: Use rotate() and skew() together to introduce some clean punk rock to your CSS
 categories:
 - Development
 - CSS

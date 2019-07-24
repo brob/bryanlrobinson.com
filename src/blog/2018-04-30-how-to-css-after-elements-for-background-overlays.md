@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Use CSS &#58;&#58;before and &#58;&#58;after for simple, spicy image overlays
+title: Use CSS ::before and ::after for simple, spicy image overlays
 categories:
   - design
   - CSS
@@ -8,7 +8,7 @@ categories:
 featuredImg: /images/overlay-finished.jpg
 featuredLarge: true
 baseLayout: container--right
-description: Use &#58;after elements to create the simplest HTML possible to render useful and fun overlays on top of background images. Then extend them with blend-modes!
+description: Use :after elements to create the simplest HTML possible to render useful and fun overlays on top of background images. Then extend them with blend-modes!
 grid-size: large
 updated: 05 March, 2019
 adSpace: 

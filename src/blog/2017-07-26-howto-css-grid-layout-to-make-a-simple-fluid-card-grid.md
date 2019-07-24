@@ -1,5 +1,5 @@
 ---
-title: How To&#58; Use CSS Grid Layout to Make a Simple, Fluid Card Grid
+title: How To: Use CSS Grid Layout to Make a Simple, Fluid Card Grid
 categories:
 - Development
 - Design

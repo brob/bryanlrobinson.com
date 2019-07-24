@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Grid vs. Flex&#58; A Tale of a "Simple" Promo Space
+title: Grid vs. Flex: A Tale of a "Simple" Promo Space
 categories:
   - development
   - grid

@@ -1,6 +1,6 @@
 ---
-title: Bryan Robinson - Where Can CSS Take Design?
+title: Bryan Robinson - Designer, Developer, Educator
 layout: "layouts/home.njk"
-headline: Advocating for Clean Design and Front-end Development
-description: My Name is Bryan Robinson, and I'm looking to develop an answer to that question.
+headline: Advocating for HTML, CSS and clean design
+description: Hello, World! I'm a designer and developer with over a decade of experience building experiences and leading teams on the web. I write and record about HTML, CSS, the power of static sites and good, clean design.
 ---

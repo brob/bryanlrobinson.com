@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Top 3 uses for the &#58;&#58;before and &#58;&#58;after CSS pseudo elements
+title: Top 3 uses for the ::before and ::after CSS pseudo elements
 categories:
   - design
   - CSS
@@ -9,7 +9,7 @@ categories:
 featuredImg: /images/promo-pseudo-elements.jpg
 featuredLarge: true
 baseLayout: container--right
-description: It’s no secret that I'm a fan of &#58;&#58;before and &#58;&#58;after pseudo-elements. I use them to great effect for creating darkened overlays in this previous post. They have so many uses beyond that, though. Here are my top 3 uses for them in my every-day development process.
+description: It’s no secret that I'm a fan of ::before and ::after pseudo-elements. I use them to great effect for creating darkened overlays in this previous post. They have so many uses beyond that, though. Here are my top 3 uses for them in my every-day development process.
 grid-size: large
 updated: 20 Aug, 2018
 adSpace: 

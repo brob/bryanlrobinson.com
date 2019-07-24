@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: How To&#58; Use CSS Grid to Mix and Match Design Patterns
+title: How To: Use CSS Grid to Mix and Match Design Patterns
 categories:
   - design
   - CSS
