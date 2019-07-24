@@ -9,9 +9,56 @@
 {% endblock banner %}
 
 {% block mainContent %}
+<section class="home-articles">
+    {% for post in featuredPosts %}
+    {% include "article-promo.html" %}
+    {% endfor %}
+</section>
 
-{% for post in featuredPosts %}
-{% include "article-promo.html" %}
-{% endfor %}
+<section class="elsewhere">
+    <h4>Other Places you can find me</h4>
+    <p>Along with the content on this site, I also post regularly in the following places. Mostly about Development and Design, but sometimes random other topics come up...</p>
+    <ul>
+        <li><a href="">YouTube</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Dev.to</a></li>
+    </ul>
+</section>
+<section class="hire-me">
+    <h3>Want to work with me?</h3>
+    <p>Some info about how awesome it can be to work with me</p>
+    <a href="" class="button">Design Reviews</a>
+    <a href="" class="button">Consulting</a>
+    <a href="" class="button">Workshops</a>
+    
+</section>
+<section class="projects">
+    <h3>A Selection of my Projects and Courses</h3>
+
+    <div class="projects__item">
+        <h4>Practical CSS Grid</h4>
+        <img src="" alt="Practical Grid promo image">
+        <p>A description of things goes here and here and here and here and here</p>
+        <a href="#" class="button">Sign up</a>
+    </div>
+    <div class="projects__item">
+        <h4>PeerReviews.dev</h4>
+        <img src="" alt="PeerReviews promo image">
+        <p>A description of things goes here and here and here and here and here</p>
+        <a href="#" class="button">See the Reviews</a>
+    </div>
+    <div class="projects__item">
+        <h4>Pseudo Power: Learn all about CSS Pseudo Elements</h4>
+        <img src="" alt="Pseudo Power promo image">
+        <p>A description of things goes here and here and here and here and here</p>
+        <a href="#" class="button">Sign up</a>
+    </div>
+    <div class="projects__item">
+        <h4>My Client Wants</h4>
+        <img src="" alt="My Client Wants promo image">
+        <p>A description of things goes here and here and here and here and here</p>
+        <a href="#" class="button">Sign up</a>
+    </div>
+</section>
 
 {% endblock mainContent %}
