@@ -13,12 +13,12 @@
 <body>
     
     <nav class="site-nav">
-        <a href="/">Home</a>
-        <a href="/blog">Blog</a>
+        <a class="logo" href="/"><img src="/images/logo.svg" alt="<br> logo"></a>
+        <a class="site-nav__item" href="/blog">Blog</a>
     </nav>
 
 
-    <section class="banner">
+    <section class="banner {% block bannerClass %}{% endblock %}">
         {% block banner %}
             <h1 class="banner__title">{{ title }}</h1>
             {% if subhead %}<h2>{{ subhead }}</h2>{% endif %}

@@ -5,6 +5,7 @@
     --faded-bg: #edffef;
     --darker-bg: #dffee1;
     --transparent-black: rgba(10, 10, 10, .8);
+    --font-condensed: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
 }
 html {
     font-size: 135%;
@@ -18,8 +19,34 @@ img {
     max-width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;;
+    font-family: var(--font-condensed);
     font-weight: normal;
+}
+
+.site-nav {
+    padding: 1rem 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.site-nav__item {
+    display: flex;
+    align-items: stretch;
+    padding: 0 .5rem 1rem;
+    margin: 0 .5rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 5px solid transparent;
+}
+.site-nav__item:hover, .site-nav__item.active {
+    border-bottom: 5px solid var(--transparent-black);
+}
+.logo {
+    flex: 1;
+    border: none;
+}
+.logo img {
+    min-height: 2rem;
 }
 
 .banner {
@@ -33,7 +60,26 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1em;
     margin: 0;
 }
+.homepage-headshot {
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw;
+    min-width: 200px;
+    min-height: 200px;
+    max-height: 600px;
+    max-width: 600px;
+    object-fit: cover;
+    border: 5px solid #111;
+    shape-outside: margin-box;
+    margin: 0 2rem 2rem 0;
+    float: left;
+}
 
+.home-articles {
+    width: 90vw;
+    max-width: 850px;
+    margin: 1rem auto;
+}
 
 .blog-content {
     margin-left: auto;
