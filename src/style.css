@@ -27,6 +27,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-condensed);
     font-weight: normal;
 }
+.utility-pad {
+    padding: 2rem;
+}
 .button {
 
     display: inline-block;
@@ -213,19 +216,10 @@ p > code {
 
 }
 
-/* 
-.elsewhere, .hire-me {
-    width: 90vw;
-    max-width: 1200px;
-    margin: auto;
-    padding: 2rem 0;
-} */
 .two-third {
     display: grid;
     grid-template-columns: 1.25fr 2fr;
     grid-gap: 2rem;
-    /* justify-content: center; */
-    padding: 2rem;
 }
 
 .hire-me {
@@ -233,15 +227,40 @@ p > code {
     padding: 1rem 1.5rem;
     border: 5px solid var(--transparent-black);
 }
+.hire-me .button {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
 
 .auto-grid {
     --auto-grid-min-size: 16rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
 }
 
-
+.projects__item {
+    display: block;
+    box-shadow: 0 0 1px #000;
+    text-decoration: none;
+    color: #333;
+    transition: .3s ease-out;
+}
+.projects__item:hover {
+    box-shadow: 0 0 3px #000;
+}
+.projects__item * {
+    margin: 0;
+}
+.projects__item img {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+}
+.projects__item * + * {
+    padding: 0 1rem;
+    margin-top: .5rem;
+}
 
 
 /* PRISM THEMES */ 
