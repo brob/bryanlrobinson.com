@@ -1,0 +1,6 @@
+{
+    "template": "layouts/base.njk",
+    "tags": "presentations",
+    "permalink": "/speaking/{{ page.fileSlug }}/"
+
+}

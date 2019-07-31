@@ -4,17 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ title }}</title>
+    <title>{% if title %}{{ title }} - {% endif %}{{ site.name }}</title>
 
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed|IBM+Plex+Sans:300,300i&display=fallback" rel="stylesheet">
 
     <link rel="stylesheet" href="/style.css">
+
+
+
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+        <link rel="alternate" type="application/rss+xml" title="Articles RSS Feed" href="{{ site.url }}/feed.xml" />
+        <link href="https://twitter.com/brob" rel="me">
+        <link rel="webmention" href="https://webmention.io/bryanlrobinson.com/webmention" />
+        <link rel="pingback" href="https://webmention.io/bryanlrobinson.com/xmlrpc" />
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WZ6ZDZ8');</script>
+        <!-- End Google Tag Manager -->
+
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@brob" />
+      {% if title %}
+        <meta name="twitter:title" content="{{ title }}" />
+      {% endif %}
+      {% if description %}
+      <meta name="description" content="{{ description | escape }}">
+      <meta name="twitter:description" content="{{ description | escape }}" />
+      {% endif %}
+
+      {% if featuredImg %}
+        <meta name="twitter:image" content="{{ site.url }}{{ featuredImg }}" />
+      {% endif %}
+      {% if featuredLarge %}
+        <meta name="twitter:card" content="summary_large_image" />
+      {% endif %}
+      <link rel="manifest" href="/manifest.json">
+
+
 </head>
 <body>
     
     <nav class="site-nav">
         <a class="logo" href="/"><img src="/images/logo.svg" alt="<br> logo"></a>
-        <a class="site-nav__item" href="/blog">Blog</a>
+        <div class="nav-items">
+            <a class="site-nav__item" href="/blog">Blog</a>
+            <a class="site-nav__item" href="/work-with-bryan">Work with Me</a>
+            <a class="site-nav__item" href="/speaking">Speaking</a>
+            <a class="site-nav__item" href="https://twitter.com/brob">Twitter</a>
+            <a class="site-nav__item" href="https://www.youtube.com/channel/UCTLrD1MTRbjxtFCRaFXqkdQ">YouTube</a>
+        </div>
     </nav>
 
 
@@ -25,10 +66,15 @@
         {% endblock banner %}
 
     </section>
+    <main class="content {{ contentClass }}">
+        {% block mainContent %}
+            {{ content | safe }}
+        {% endblock mainContent %}
+    </main>
 
-    {% block mainContent %}
-        {{ content | safe }}
-    {% endblock mainContent %}
+    <footer class="site-footer">
+        &copy; Bryan L. Robinson | Thanks for reading! Built with love using <a href="https://11ty.io">11ty</a> and <a href="https://netlify.com">Netlify</a>.
 
+    </footer>
 </body>
 </html>

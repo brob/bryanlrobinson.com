@@ -1,0 +1,60 @@
+---
+title: Speaking Topics and Upcoming Events
+permalink: "/speaking/"
+layout: "layouts/base.njk"
+---
+
+<section class="upcoming">
+    <h2>Upcoming Events</h2>
+    <table class="events">
+        <tr class="event">
+            <td><strong>Join the CSS Future with CSS Grid</strong></td>
+            <td>CodePaLOUsa</td>
+            <td>August 22, 2019</td>
+            <td><a href="http://www.codepalousa.com/Sessions/1589">See more</a></td>
+        </tr>
+    </table>
+</section>
+
+<form class="speaking-contact" netlify netlify-honeypot="bot_capture" name="speaking" action="/thanks/">
+    <h2>Invite me to speak</h2>
+    <label for="full_name">What should I call you? *</label>
+    <input type="text" required name="full_name" id="full_name">
+
+    <label for="__replyto">What's your email address? *</label>
+    <input type="email" required name="__replyto" id="__replyto">
+
+    <label for="organization">What conference or company are you with?</label>
+    <input type="text" name="organization" id="organization">
+
+    <fieldset>
+        <legend>What should I present?</legend>
+        {% for presentation in site.presentations %}{% if presentation.data.draft != true %}<label for="{{ presentation.data.title | slugify }}"><input type="checkbox" name="{{ presentation.data.title | slugify }}" id="{{ presentation.data.title | slugify }}" value="{{ presentation.data.title }}"> {{ presentation.data.title }}</label>{% endif %} {% endfor %}
+        <label for="something-special"><input type="checkbox" name="something-special" id="something-special" value="Special"> Something Special</label>
+    </fieldset>
+
+    <label for="message">What else should I know?</label>
+    <textarea id="message" name="message" rows="4" cols="80"></textarea>
+    
+    <input type="hidden" name="page" id="page" value="{{ page.url }}">
+    <div style="display: none;">
+        <label for="bot_capture">Don't fill this out</label><input name="bot_capture" type="text">
+    </div>
+    <input type="submit" value="Start the Conversation">
+</form>
+{% for presentation in collections.presentations %}
+    <h1>{{presentation}}</h1>
+{% endfor %}
+
+<main class="speaking-grid">
+        {% for presentation in collections.presentations %}
+            <article class="stripe item ">
+                <h2><a href="{{ presentation.data.url }}">{{ presentation.data.title }}</a></h3>
+                <div class="description">
+                    <p>{{ presentation.data.description }}</p>
+                    <a href="{{ presentation.data.url }}" title="{{ presentation.data.title }}">Read More &raquo;</a>
+                </div>
+            </article>
+        {% endfor %}
+</main>
+   
