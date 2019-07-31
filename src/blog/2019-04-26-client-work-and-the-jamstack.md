@@ -7,7 +7,7 @@ baseLayout: container--right
 description: I worked at an agency for almost six years. In that time, I created only a handful of static sites. Part of this was because the agency had a custom content management system. The other part was an unwillingness to give up "dynamic" websites. I've created a website to aggregate resources for agencies and freelancers looking to branch out into the JAMstack.
 featuredImg: /images/icons/icon-512x512.png
 adSpace: 
-  image: /images/cc-logo.png
+  image: /images/practical-grid-heart.jpg
   headline: Practical CSS Grid - Learn about this revolution in Web design!
   description: Whether you're new to CSS Grid or have played with it, finding practical examples of this new layout mechanism is the best way to learn it's power. Sign up below for two hours of practical grid knowledge just for you!
   linkText: Start Learning Now!

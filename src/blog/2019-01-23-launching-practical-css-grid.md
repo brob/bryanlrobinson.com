@@ -8,7 +8,7 @@ baseLayout: container--right
 description: Late last year, I took the plunge and began to work full time on my passion - education. That has led to today. Today, I officially launched my first online course - Practical CSS Grid!
 featuredImg: /images/uploads/practical-grid-promo.png
 adSpace: 
-  image: /images/cc-logo.png
+  image: /images/practical-grid-heart.jpg
   headline: Practical CSS Grid - Learn about this revolution in Web design!
   description: Whether you're new to CSS Grid or have played with it, finding practical examples of this new layout mechanism is the best way to learn it's power. Sign up below for two hours of practical grid knowledge just for you!
   linkText: Start Learning Now!

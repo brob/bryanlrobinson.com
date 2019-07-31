@@ -22,6 +22,22 @@
     {{ content | safe }}
 
     <aside class="blog-related">
+        {% if adSpace %}
+            <div class="adspace">
+                <h3>A quick promo</h3>
+                {% if adSpace.linkUrl %}
+                    <a href="{{ adSpace.linkUrl }}">
+                {% endif %}
+                <img src="{{ adSpace.image }}" alt="">
+                {% if adSpace.headline %}
+                    <h4>{{ adSpace.headline }}</h4>
+                {% endif %}
+                {% if adSpace.linkUrl %}
+                    </a>
+                {% endif %}
+            </div>
+        {% endif %}
+
         <h3>Related stuff</h3>
         <ul class="related-list">
             {% for post in collections.posts | limit(3) %}

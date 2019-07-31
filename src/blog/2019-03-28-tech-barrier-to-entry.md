@@ -8,7 +8,7 @@ baseLayout: container--right
 description: I'm grateful for my unique journey to find my professional niche. It's taken a lot of twists and turns. Is my journey replicable in this era of developer tooling and convenience?
 featuredImg: /images/icons/icon-512x512.png
 adSpace: 
-  image: /images/cc-logo.png
+  image: /images/practical-grid-heart.jpg
   headline: Practical CSS Grid - Learn about this revolution in Web design!
   description: Whether you're new to CSS Grid or have played with it, finding practical examples of this new layout mechanism is the best way to learn it's power. Sign up below for two hours of practical grid knowledge just for you!
   linkText: Start Learning Now!

@@ -8,7 +8,7 @@ baseLayout: container--right
 description: In this tutorial, use CSS Grid to create a self-centering full-width element. Traditionally, this required extra markup, but with CSS Grid, we won't need it!
 featuredImg: /images/icons/icon-512x512.png
 adSpace: 
-  image: /images/cc-logo.png
+  image: /images/practical-grid-heart.jpg
   headline: Practical CSS Grid - Learn about this revolution in Web design!
   description: Whether you're new to CSS Grid or have played with it, finding practical examples of this new layout mechanism is the best way to learn its power. Sign up below for two hours of practical grid knowledge just for you!
   linkText: Start Learning Now!

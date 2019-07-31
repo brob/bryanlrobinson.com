@@ -7,7 +7,7 @@ baseLayout: container--right
 description: I enjoy building workflows for pure static sites. I enjoy ingesting data into my build process instead of loading my client-side with fetches. In this example, we'll use Eleventy's ability to use a JavaScript file, to execute code to fetch data on site build, negating the need for task runners like Gulp.
 featuredImg: /images/icons/icon-512x512.png
 adSpace: 
-  image: /images/cc-logo.png
+  image: /images/practical-grid-heart.jpg
   headline: Practical CSS Grid - Learn about this revolution in Web design!
   description: Whether you're new to CSS Grid or have played with it, finding practical examples of this new layout mechanism is the best way to learn it's power. Sign up below for two hours of practical grid knowledge just for you!
   linkText: Start Learning Now!

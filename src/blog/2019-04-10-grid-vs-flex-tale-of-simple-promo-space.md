@@ -9,7 +9,7 @@ baseLayout: container--right
 description: I love the new layout modes in CSS. Grid and Flexbox are both amazing features. They each have their place. What if I told you that if you used the "wrong" one, you could double your CSS and HTML? Let's take a look at what appears to be a simple promo grid.
 featuredImg: /images/icons/icon-512x512.png
 adSpace: 
-  image: /images/cc-logo.png
+  image: /images/practical-grid-heart.jpg
   headline: Practical CSS Grid - Learn about this revolution in Web design!
   description: Whether you're new to CSS Grid or have played with it, finding practical examples of this new layout mechanism is the best way to learn it's power. Sign up below for two hours of practical grid knowledge just for you!
   linkText: Start Learning Now!
