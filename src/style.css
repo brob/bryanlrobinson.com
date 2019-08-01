@@ -366,6 +366,43 @@ p > code {
 
 
 
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: 1px solid var(--transparent-black);
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+    color: var(--transparent-black);
+    margin-bottom: 1rem;
+}
+label {
+    font-size: .8rem;
+    color: var(--transparent-black);
+    display: block;
+}
+fieldset {
+    margin-bottom: .75rem;
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: var(--darker-bg);
+    padding: 10px 25px;
+    color: var(--transparent-black);
+    font-size: 1rem;
+    border: 2px solid currentColor;
+    cursor: pointer;
+    transition: .3s ease-out;
+    -webkit-appearance: none;
+
+}
+input[type="submit"]:hover {
+    background-color: darken($color-brand, 15%);
+}
+
+
+
+
 /* PRISM THEMES */ 
 
 /**
