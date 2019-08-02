@@ -78,46 +78,5 @@
     </footer>
 
 
-{% if tags %}
-{% if "posts" in tags %}
-
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "NewsArticle",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ site.url }}{{ url }}"
-  },
-  "headline": "{{ title }}",
-  {% if featuredImg %}
-  "image": {
-    "@type": "ImageObject",
-    "url": "{{ site.url }}{{ featuredImg }}",
-    "height": 800,
-    "width": 800
-  },
-  {% endif %}
-  "datePublished": "{{ date }}",
-  "author": {
-    "@type": "Person",
-    "name": "Bryan L. Robinson"
-  },
-   "publisher": {
-    "@type": "Organization",
-    "name": "Bryanlrobinson.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ site.url }}/images/logo.png",
-      "width": 70,
-      "height": 20
-    }
-  },
-  "description": "{{ description | escape }}"
-}
-</script>
-
-{% endif %}
-{% endif %}
 </body>
 </html>
