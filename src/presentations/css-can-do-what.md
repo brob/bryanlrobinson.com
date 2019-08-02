@@ -1,6 +1,5 @@
 ---
 title: CSS Can Do What?!
-layout: presentations
 description: CSS can do amazing things. Buckle up, as I take your attendees through multiple examples of things you woudn't think would be possible with plain old CSS, no JavaScript required. 
 draft: true
 ---

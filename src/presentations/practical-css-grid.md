@@ -1,6 +1,5 @@
 ---
 title: Workshop - Practical CSS Grid
-layout: presentations
 description: In this workshop, we’ll cover all the basics and advanced maneuvers of Grid in practical, reusable components that build on each other.
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Join the CSS Future with CSS Grid
-layout: presentations
 description: Streamline your layout work with the new hotness from the actual CSS specification - CSS Grid Layout.
 ---
 

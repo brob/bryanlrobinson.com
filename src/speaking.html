@@ -29,7 +29,7 @@ layout: "layouts/base.njk"
 
     <fieldset>
         <legend>What should I present?</legend>
-        {% for presentation in site.presentations %}{% if presentation.data.draft != true %}<label for="{{ presentation.data.title | slugify }}"><input type="checkbox" name="{{ presentation.data.title | slugify }}" id="{{ presentation.data.title | slugify }}" value="{{ presentation.data.title }}"> {{ presentation.data.title }}</label>{% endif %} {% endfor %}
+        {% for presentation in collections.presentations %}{% if presentation.data.draft != true %}<label for="{{ presentation.data.title | slugify }}"><input type="checkbox" name="{{ presentation.data.title | slugify }}" id="{{ presentation.data.title | slugify }}" value="{{ presentation.data.title }}"> {{ presentation.data.title }}</label>{% endif %} {% endfor %}
         <label for="something-special"><input type="checkbox" name="something-special" id="something-special" value="Special"> Something Special</label>
     </fieldset>
 
@@ -42,17 +42,15 @@ layout: "layouts/base.njk"
     </div>
     <input type="submit" value="Start the Conversation">
 </form>
-{% for presentation in collections.presentations %}
-    <h1>{{presentation}}</h1>
-{% endfor %}
+
 
 <main class="speaking-grid">
         {% for presentation in collections.presentations %}
             <article class="stripe item ">
-                <h2><a href="{{ presentation.data.url }}">{{ presentation.data.title }}</a></h3>
+                <h2><a href="{{ presentation.url }}">{{ presentation.data.title }}</a></h3>
                 <div class="description">
                     <p>{{ presentation.data.description }}</p>
-                    <a href="{{ presentation.data.url }}" title="{{ presentation.data.title }}">Read More &raquo;</a>
+                    <a href="{{ presentation.url }}" title="{{ presentation.data.title }}">Read More &raquo;</a>
                 </div>
             </article>
         {% endfor %}

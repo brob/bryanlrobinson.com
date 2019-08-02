@@ -1,6 +1,5 @@
 ---
 title: You're a Designer; I promise
-layout: presentations
 description: Too many developers think they can never learn to design. This talk aims to dissuade them of that idea!
 ---
 
