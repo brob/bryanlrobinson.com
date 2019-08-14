@@ -43,6 +43,9 @@
       {% endif %}
       <link rel="manifest" href="/manifest.json">
 
+        {% if asideHeight %}
+            <style>--asideHeight: {{ asideHeight }}</style>
+        {% endif %}
 
 </head>
 <body>

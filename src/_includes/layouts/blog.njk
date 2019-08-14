@@ -4,6 +4,14 @@
 
     {{ super() }}
 
+
+
+{% for category in collections.posts %}
+<h1>{{ category }}</h1>
+{% endfor %}
+
+
+
     {% for post in collections.posts %}
         {% include "article-promo.html" %}
     {% endfor %}

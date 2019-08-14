@@ -4,6 +4,7 @@ description: CSS has changed. It’s moving away from the mired mess of it’s o
   and toward a bright future of interesting layout and easy design. If you’ve been
   focused on other important skills in the past 3 years, you’ve missed out on a lot
   of new, helpful techniques.
+
 ---
 
 ![Post-Modern CSS Opening Slide](/images/speaking/post-modern-slide.png)

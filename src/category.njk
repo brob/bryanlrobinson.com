@@ -1,0 +1,10 @@
+---
+pagination:
+    data: collections.categories
+    alias: category
+    size: 1
+layout: "layouts/base.njk"
+permalink: /category/{{category}}
+renderData: 
+  title: Posts filed under {{ category }}
+---

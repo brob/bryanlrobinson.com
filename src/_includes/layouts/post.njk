@@ -21,7 +21,8 @@
 <section class="blog-content">
     {{ content | safe }}
 
-    <aside class="blog-related">
+    <aside class="blog-related">       
+    {% block related %}
         {% if adSpace %}
             <div class="adspace">
                 <h3>A quick promo</h3>
@@ -46,6 +47,8 @@
             </li>
             {% endfor %}
         </ul>
+    {% endblock related %}
+
     </aside>
 </section>
 

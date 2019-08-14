@@ -16,7 +16,26 @@ module.exports = function(config) {
     config.addCollection('posts', collection => {
         return collection.getFilteredByTag('posts').reverse();
     });
+
+    config.addCollection('categories', collection => {
+      let categories = [];
+      let sortedPosts = [];
+      const posts = collection.getFilteredByTag('posts').reverse()
+
+      posts.forEach(post => {
+        categories = [...new Set([...categories, ...post.data.categories])];
+      });
+      categories.forEach(category => {
+        console.log(category);
+        let filteredPosts = posts.filter(post => post.data.categories.includes(category));
+        sortedPosts[`${category}`] = [ filteredPosts ];
+      })
+
+      return sortedPosts;
+      
+  });
     
+
     config.addFilter("limit", (array, limit) => array.slice(0, limit));
     config.addPassthroughCopy("_redirects");
     config.addPassthroughCopy("src/images");
