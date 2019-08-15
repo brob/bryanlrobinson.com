@@ -20,7 +20,9 @@
 
     <fieldset>
         <legend>What should I present?</legend>
-        {% for presentation in collections.presentations %}{% if presentation.data.draft != true %}<label for="{{ presentation.data.title }}"><input type="checkbox" name="{{ presentation.data.title }}" id="{{ presentation.data.title  }}" value="{{ presentation.data.title | slug | urlencode }}"> {{ presentation.data.title }}</label>{% endif %} {% endfor %}
+        {% for presentation in collections.presentations %}{% if presentation.data.draft != true %}
+            {% set inputName = presentation.data.title | slug | replace("'", "") %}
+        <label for="{{ inputName }}"><input type="checkbox" name="{{ inputName }}" id="{{ inputName }}" value="{{ inputName }}"> {{ presentation.data.title }}</label>{% endif %} {% endfor %}
         <label for="something-special"><input type="checkbox" name="something-special" id="something-special" value="Special"> Something Special</label>
     </fieldset>
 
