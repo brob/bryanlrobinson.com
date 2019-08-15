@@ -204,6 +204,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1em;
 }
 
+@media (max-width: 840px) { 
+    .blog-related {
+        border-left: 0;
+        border-top: 1px solid var(--transparent-black);
+    }
+}
+
 .adspace {
     margin-bottom: 1rem;
 }
