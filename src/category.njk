@@ -3,8 +3,18 @@ pagination:
     data: collections.categories
     alias: category
     size: 1
-layout: "layouts/base.njk"
-permalink: /category/{{category}}
-renderData: 
-  title: Posts filed under {{ category }}
+permalink: /blog/category/{{ category.title | slug }}.html
 ---
+{% extends "layouts/blog.njk" %}
+{% block pageTitle %}
+{{ category.title | capitalize }} Blog Posts -
+{% endblock pageTitle %}
+{% block bannerTitle %}
+{{ category.title | capitalize }} Blog Posts
+{% endblock bannerTitle %}
+
+{% block mainContent %}
+    {% for post in category.posts %}
+        {% include "article-promo.html" %}
+    {% endfor %}
+{% endblock mainContent %}

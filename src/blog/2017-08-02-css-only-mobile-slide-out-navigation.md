@@ -6,6 +6,7 @@ categories:
 - Design
 - CSS
 - Tutorial
+sidebarOverride: 10
 layout: layouts/post.njk
 description: Mobile navigation and the "hamburger nav" pattern aren't going away. In this tutorial, I'll walk you through creating a mobile off-canvas navigation with only CSS and HTML.
 featuredImg: /images/blog/mobile-nav/mobile-nav-static.png

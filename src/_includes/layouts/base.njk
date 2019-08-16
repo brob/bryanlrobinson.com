@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% if title %}{{ title }} - {% endif %}{{ site.name }}</title>
+    <title>{% block pageTitle %}{% if title %}{{ title }} - {% endif %}{% endblock %}{{ site.name }}</title>
 
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed|IBM+Plex+Sans:300,300i&display=fallback" rel="stylesheet">
 
@@ -62,7 +62,7 @@
 
     <section class="banner {% block bannerClass %}{% endblock %}">
         {% block banner %}
-            <h1 class="banner__title">{{ title }}</h1>
+            <h1 class="banner__title">{% block bannerTitle %}{{ title }}{% endblock bannerTitle %}</h1>
             {% if subhead %}<h2>{{ subhead }}</h2>{% endif %}
         {% endblock banner %}
 

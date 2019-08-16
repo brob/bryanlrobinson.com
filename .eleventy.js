@@ -26,15 +26,16 @@ module.exports = function(config) {
         categories = [...new Set([...categories, ...post.data.categories])];
       });
       categories.forEach(category => {
-        console.log(category);
         let filteredPosts = posts.filter(post => post.data.categories.includes(category));
-        sortedPosts[`${category}`] = [ filteredPosts ];
-      })
-
+        let categoryDetails =  { 
+          'title': category,
+          'posts': [ ...filteredPosts ]
+        };
+        sortedPosts.push(categoryDetails);      
+      });
       return sortedPosts;
-      
-  });
-    
+    });
+        
 
     config.addFilter("limit", (array, limit) => array.slice(0, limit));
     config.addPassthroughCopy("_redirects");

@@ -1,5 +1,8 @@
 {% extends "layouts/base.njk" %}
 {% set contentClass = "post-content" %}
+
+
+
 {% block banner %}
 <h1 class="banner__title">{{ title }}</h1>
 {% if subhead %}
@@ -9,7 +12,7 @@
 {% if categories %}
 <ul class="category-list">
 {% for category in categories %}
-<li class="category-list__item"><a class="category-list__link" href="/blog/category/{{ category }}">{{ category }}</a></li>
+<li class="category-list__item"><a class="category-list__link" href="/blog/category/{{ category | slug }}">{{ category }}</a></li>
 
 {% endfor %}
 </ul>
@@ -21,7 +24,7 @@
 <section class="blog-content">
     {{ content | safe }}
 
-    <aside class="blog-related">       
+    <aside class="blog-related" {% if sidebarOverride %}style="--aside-height: {{ sidebarOverride }};"{% endif %}>       
     {% block related %}
         {% if adSpace %}
             <div class="adspace">
