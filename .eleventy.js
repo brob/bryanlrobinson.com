@@ -40,6 +40,8 @@ module.exports = function(config) {
     config.addPassthroughCopy("_redirects");
     config.addPassthroughCopy("src/images");
     config.addPassthroughCopy("src/style.css");
+    config.addPassthroughCopy("src/service-worker.js");
+    config.addPassthroughCopy("src/manifest.json");
 
 
   return {
