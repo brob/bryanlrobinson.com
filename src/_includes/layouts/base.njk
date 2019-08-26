@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed|IBM+Plex+Sans:300,300i&display=fallback" rel="stylesheet">
 
     <link rel="stylesheet" href="/style.css">
-
+    {% block cssoverride %}{% endblock cssoverride %}
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
         <link rel="alternate" type="application/rss+xml" title="Articles RSS Feed" href="{{ site.url }}/feed.xml" />
         <link href="https://twitter.com/brob" rel="me">
@@ -51,6 +51,7 @@
     <nav class="site-nav">
         <a class="logo" href="/"><img src="/images/logo.svg" alt="<br> logo"></a>
         <div class="nav-items">
+            <a class="site-nav__item" href="/about">About</a>
             <a class="site-nav__item" href="/blog">Blog</a>
             <a class="site-nav__item" href="/work-with-bryan">Work with Me</a>
             <a class="site-nav__item" href="/speaking">Speaking</a>

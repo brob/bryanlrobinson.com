@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: 2019 The Year of Markup-First Development
 categories:
   - development
-  - css
+  - CSS
   - html
 baseLayout: container--right
 description: The state of the web in 2018 has been heavy into the world of JavaScript. We've made amazing advancements in the way our sites work. Every site has the ability to feel like an application. Without HTML, though, our fancy future may have a dystopian layer right beneath the surface.
