@@ -1,6 +1,7 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const dateFilter = require('nunjucks-date-filter');
 const markdownIt = require("markdown-it");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(config) {
     let mdOptions = {
@@ -8,10 +9,12 @@ module.exports = function(config) {
       breaks: true,
       linkify: true
     };
-    
+
     config.setLibrary("md", markdownIt(mdOptions).use(require('markdown-it-anchor'), {}));
 
     config.addPlugin(syntaxHighlight);
+    config.addPlugin(pluginRss);
+
     config.addFilter("date", dateFilter);
     config.addCollection('posts', collection => {
         return collection.getFilteredByTag('posts').reverse();
