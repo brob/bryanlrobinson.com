@@ -443,6 +443,62 @@ input[type="submit"]:hover {
     font-style: italic;
 }
 
+.projects-stripe {
+    display: flex;
+    grid-column: fullWidth;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.project_info {
+    margin: 0 5vw 5vw;
+}
+.screenshot {
+    margin: 5vw 0;
+}
+@supports (object-fit: cover) {
+    .screenshot img {
+        width: 100%;
+        height: 45vw;
+        object-fit: cover;
+        object-position: top center;
+    }
+}
+@media (min-width: 1000px) {
+    .projects-stripe {
+        flex-direction: row;
+
+    }
+    .projects-stripe:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .screenshot {
+        width: 50%;
+        margin: 0;
+    }
+    .screenshot img {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: top center;
+    }
+    @supports (object-fit: cover) {
+        .screenshot img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            object-position: top center;
+        }
+    }
+    .project_info {
+        width: 50%;
+        padding: 30px;
+        box-sizing: border-box;
+        margin: 0;
+      }
+    
+}
 
 
 

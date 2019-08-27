@@ -1,0 +1,13 @@
+{% for project in projects %}
+
+    <article class="projects-stripe item--center pull-1 {% cycle 'neutral', 'primary' %} {% cycle 'left', 'right' %}">
+        <aside class="screenshot"><img src="{% if project.screenshot %}{{ project.screenshot }}{% else %}https://placekitten.com/1000/800{% endif %}"></aside>
+        <main class="project_info">
+            {% if project.image %}<figure><img class="stripe_image" src="{{ project.image }}" alt="{{ project.title }}"></figure>{% endif %}
+            <h3 class="stripe_headline">{{ project.title}}</h3>
+            <div class="stripe_description">{{ project.description }}</div>
+            <a href="{{ project.url }}" class="button primary">View the Site &raquo;</a>
+        </main>
+    </article>
+
+{% endfor %}

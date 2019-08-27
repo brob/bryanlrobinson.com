@@ -1,0 +1,44 @@
+[
+	{
+		"title": "Memphis in May",
+		"description": "<p>Memphis in May had navigations issues. Too many menus; not enough clear structure. I worked with the RocketFuel designers and developers to completely overhaul the architecture of the site.</p><p>The new navigation surfaced their year-round mission without sacrificing event-based calls to action.</p> <p>The project had a tight deadline. Still, we delivered a strikingly beautiful website that increased engagement. On the organization's annual top traffic day, page views per session were up 30% year over year with a corresponding increase to time on site. </p>",
+		"url": "http://memphisinmay.org",
+        "screenshot": "/images/projects/mim.jpg"
+
+    },
+	{
+		"title": "Operation Broken Silence",
+		"description": "<p>On Operation Broken Silence, an award-winning site design, I offered creative direction, technical planning and information architecture to create a bold site for a Memphis-based non-profit taking on the genocide in the Sudan.</p><p>OBS hadn't had a web presence of their own and RocketFuel worked together with them to create a high-class, donor-driven site including interactive infographics and placing their video production skills at the forefront.</p>",
+		"image": "/images/projects/obs-logo.png",
+		"url": "http://operationbrokensilence.org",
+        "screenshot": "/images/projects/obs.jpg"
+	},
+
+	{
+		"title": "Memphis Grizzlies Foundation",
+		"description": "<p>When the Memphis Grizzlies Foundation was in need of a new website, they were also in need of a new site architecture. Through multiple meetings with the client, we worked out a new site map that met their needs and stayed within standards of website conventions.</p><p>Then, I worked with the RocketFuel design and development to implement an amazing visual design -- with multiple iterations to meet a demanding client's strong aesthetic sense -- and streamlined code -- with an eye toward the client being able to edit content in the custom RocketFuel CMS.</p>",
+		"image": "/images/projects/grizzlies-foundation-logo.svg",
+		"url": "http://www.grizzliesfoundation.org",
+    "screenshot": "/images/projects/griz-foundation.jpg"
+
+	},
+
+	{
+		"title": "TrophyBox Cards",
+		"description": "<p>Bryce Carson came to RocketFuel with an inkling of an idea for a new way of handling \"Case Breaks\" in the world of card collecting. We worked through strategy, branding (naming and logo creation) as well as a unique custom development project to create a real-time application in which users can \"draft\" cards from a case broken by TrophyBox.</p><p>Since finishing the project, Bryce has been able to license the technology to one of the largest case-breaking websites on the market.</p>",
+		"image": "/images/projects/tbox-logo.svg",
+		"url": "http://trophyboxcards.com",
+    "screenshot": "/images/projects/trophybox.jpg"
+
+    },
+
+	{
+		"title": "Memphis Web Workers",
+		"description": "<p>As one of two organizers for the Memphis Web Workers -- a user group that meets monthly to discuss design and front-end development -- I tasked myself with creating a new site to meet our growing needs.</p><p>Originally a basic Wordpress theme, I recreated it as a static site utilizing new CSS techniques and layouts to create a unique experience for Memphis technology groups as befits our status as a design/developer hybrid group. When we started podcasting, I increased the functionality to deal with the added needs. </p>",
+		"image": "/images/projects/webworkers-logo.svg",
+		"url": "http://memphiswebworkers.com",
+    "screenshot": "/images/projects/webworkers.jpg"
+	}
+
+
+]
