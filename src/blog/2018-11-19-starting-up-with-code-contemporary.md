@@ -13,6 +13,7 @@ adSpace:
   description: CSS Grid is a revolution in web layout. With this ebook, I cover 3 design patterns that Grid solves easier, better and more creatively to help push our designs in better directions.
   linkText: Download Now!
   linkUrl: https://store.codecontemporary.com/solving-three-design-problems-with-css-grid/buy
+sidebarOverride: "10"
 ---
 
 It seems that everyone does a post like this: a bold announcement of a new journey. As of this morning, I'm beginning my new journey as an independent creator. 

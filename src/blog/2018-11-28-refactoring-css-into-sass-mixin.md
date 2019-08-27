@@ -22,7 +22,7 @@ I've begun live-streaming office hours every week. In my first effort at it, I m
 
 It struck me as I was writing a new Sass mixin that there may be designers and developers out there that haven't translated vanilla CSS into a Sass function. In this article, I want to show how to take often-used CSS and convert it into a DRY (Don't Repeat Yourself) Sass mixin.
 
-<figure style="grid-column: 1 / 3; grid-row: span 3; position: relative;
+<figure style="position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%; margin-bottom: 1rem;">
