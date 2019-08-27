@@ -14,7 +14,7 @@ adSpace:
   linkText: Start Learning Now!
   linkUrl: https://store.codecontemporary.com/practical-css-grid
 ---
-<figure style="grid-column: 1 / 3; grid-row: span 4; position: relative;
+<figure style="position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%; margin-bottom: 1rem;">
