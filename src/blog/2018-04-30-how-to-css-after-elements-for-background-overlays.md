@@ -51,7 +51,7 @@ The process looks something like this:
 {% include ad-space.html %}
 
 ### Step 1: All the markup you need, none of the bloat
-<figure style="grid-column: 1 / 3; grid-row: span 2;"><img src="/images/overlay-starting-point.jpg" alt="Grid Love"></figure>
+<figure><img src="/images/overlay-starting-point.jpg" alt="Grid Love"></figure>
 
 In a banner, all we really want is the banner's container and any content that banner needs to contain.
 
@@ -76,7 +76,7 @@ By apply `::before` or `::after` to an element, you can insert a dynamic element
 
 One important note, all pseudo-elements require a `content` CSS property to display. In our case, this will just be a blank string.
 
-<figure style="grid-column: 1 / 3; grid-row: span 2;"><img src="/images/overlay-somethings-not-right.jpg" alt="Grid Love"></figure>
+<figure><img src="/images/overlay-somethings-not-right.jpg" alt="Grid Love"></figure>
 
 {% highlight scss %}
 .banner::after {
@@ -116,12 +116,12 @@ By using absolute positioning, we've actually put the overlay on top of the stac
 
 #### And with that we have a finished overlay.
 
-<figure style="grid-column: 2 / 7;"><img src="/images/overlay-finished.jpg" alt="Grid Love"></figure>
+<figure><img src="/images/overlay-finished.jpg" alt="Grid Love"></figure>
 
 
 ## Bonus step: Advanced overlays with blend modes
 
-<figure style="grid-column: 1 / 3; grid-row: span 5;"><img src="/images/overlay-with-blend-mode.jpg" alt="Grid Love"></figure>
+<figure><img src="/images/overlay-with-blend-mode.jpg" alt="Grid Love"></figure>
 
 I've been toying with background blend modes for a little while now, but it blew me away when I discovered `mix-blend-mode`. This allows a developer to blend multiple elements together!
 
@@ -259,8 +259,8 @@ Overlays should be simple and clean and never bloat your HTML with additional ma
 
 If you want to play with the code in this tutorial, the CodePens are embedded below:
 
-<iframe height='400' scrolling='no' title='CSS ::after element overlays' src='//codepen.io/brob/embed/bMqBgb/?height=265&theme-id=dark&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; grid-column: 1 / 7'>See the Pen <a href='https://codepen.io/brob/pen/bMqBgb/'>CSS ::after element overlays</a> by Bryan Robinson (<a href='https://codepen.io/brob'>@brob</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='400' scrolling='no' title='CSS ::after element overlays' src='//codepen.io/brob/embed/bMqBgb/?height=265&theme-id=dark&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/brob/pen/bMqBgb/'>CSS ::after element overlays</a> by Bryan Robinson (<a href='https://codepen.io/brob'>@brob</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 <br><br>
-<iframe height='400' scrolling='no' title='CSS ::after element overlays with overlapping overlays' src='//codepen.io/brob/embed/gELMrm?height=265&theme-id=dark&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; grid-column: 1 / 7'>See the Pen <a href='https://codepen.io/brob/pen/bMqBgb/'>CSS ::after element overlays</a> by Bryan Robinson (<a href='https://codepen.io/brob'>@brob</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='400' scrolling='no' title='CSS ::after element overlays with overlapping overlays' src='//codepen.io/brob/embed/gELMrm?height=265&theme-id=dark&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; '>See the Pen <a href='https://codepen.io/brob/pen/bMqBgb/'>CSS ::after element overlays</a> by Bryan Robinson (<a href='https://codepen.io/brob'>@brob</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
