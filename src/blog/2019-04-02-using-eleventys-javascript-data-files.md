@@ -12,6 +12,7 @@ adSpace:
   description: Whether you're new to CSS Grid or have played with it, finding practical examples of this new layout mechanism is the best way to learn it's power. Sign up below for two hours of practical grid knowledge just for you!
   linkText: Start Learning Now!
   linkUrl: https://store.codecontemporary.com/practical-css-grid
+sidebarOverride: "15"
 ---
 
 I enjoy building workflows for pure static sites. I enjoy ingesting data into my build process instead of loading my client-side with fetches. 
