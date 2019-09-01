@@ -281,15 +281,4 @@ Where will you take Custom Properties?
 
 I presented most of this code at the Memphis Web Workers in August 2019. You can see the video below.
 
-
-<figure style="position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; margin-bottom: 1rem;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/-ugZb-o0l0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  style="
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;" allowfullscreen></iframe>
-</figure>
+{% youtube "-ugZb-o0l0s" %}

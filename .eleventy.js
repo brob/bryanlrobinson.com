@@ -2,6 +2,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const dateFilter = require('nunjucks-date-filter');
 const markdownIt = require("markdown-it");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const blogTools = require("eleventy-plugin-blog-tools");
 
 module.exports = function(config) {
     let mdOptions = {
@@ -14,6 +15,7 @@ module.exports = function(config) {
 
     config.addPlugin(syntaxHighlight);
     config.addPlugin(pluginRss);
+    config.addPlugin(blogTools);
 
     config.addFilter("date", dateFilter);
     config.addCollection('posts', collection => {
