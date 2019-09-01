@@ -4,6 +4,7 @@ title: Practical CSS Grid - Launching My First Course
 categories:
   - development
   - design
+  - Grid
 baseLayout: container--right
 description: Late last year, I took the plunge and began to work full time on my passion - education. That has led to today. Today, I officially launched my first online course - Practical CSS Grid!
 featuredImg: /images/uploads/practical-grid-promo.png
