@@ -1,11 +1,11 @@
 ---
 layout: layouts/post.njk
-title: What Can We Learn from CERN's WorldWideWeb rebuild?
+title: "What Can We Learn from CERN's WorldWideWeb rebuild?"
 categories:
   - development
   - design
 baseLayout: container--right
-description: Have you ever wanted to go back in time and see what it was like to browse the web using Sir Tim Berners-Lee's first web browser? I have. Apparently so did the team at CERN. For the 30th anniversary of the world's first web browser, The European Organization for Nuclear Research (CERN) brought togoether a team to recreate WorldWideWeb in a modern browser. 
+description: "Have you ever wanted to go back in time and see what it was like to browse the web using Sir Tim Berners-Lee's first web browser? I have. Apparently so did the team at CERN. For the 30th anniversary of the world's first web browser, The European Organization for Nuclear Research (CERN) brought togoether a team to recreate WorldWideWeb in a modern browser. "
 featuredImg: /images/worldwideweb-mosaic.png
 featuredLarge: true
 adSpace: 

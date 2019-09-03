@@ -129,6 +129,11 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1em;
     margin: 0;
 }
+@media (max-width: 767px) {
+    .banner__title {
+        font-size: 2.25rem;
+    }
+}
 .homepage-title {
     margin: 0 0 1rem;
     font-size: 2.25rem;
@@ -167,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
 .blog-content {
     margin-left: auto;
     display: grid;
-    grid-template-columns: [fullWidth-start] minmax(2rem, .15fr) [breakout-start content-start] minmax(10ch, 75ch) [content-end] 1fr [breakout-end aside-start] minmax(20ch, 1fr) [aside-end] minmax(1rem, .15fr) [fullWidth-end];
+    grid-template-columns: [fullWidth-start] minmax(2rem, .15fr) [breakout-start content-start] minmax(5ch, 75ch) [content-end] 1fr [breakout-end aside-start] minmax(20ch, 1fr) [aside-end] minmax(1rem, .15fr) [fullWidth-end];
     grid-row-gap: 1rem;
 }
 
@@ -205,6 +210,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 840px) { 
+    .blog-content {
+        grid-template-columns: 1fr;
+    }
     .blog-related {
         border-left: 0;
         border-top: 1px solid var(--transparent-black);

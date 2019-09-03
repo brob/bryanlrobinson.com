@@ -3,7 +3,6 @@ layout: layouts/post.njk
 title: 'Grid vs. Flex: A Tale of a "Simple" Promo Space'
 categories:
   - development
-  - Grid
   - design
 baseLayout: container--right
 description: I love the new layout modes in CSS. Grid and Flexbox are both amazing features. They each have their place. What if I told you that if you used the "wrong" one, you could double your CSS and HTML? Let's take a look at what appears to be a simple promo grid.

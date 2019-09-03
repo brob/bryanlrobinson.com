@@ -7,9 +7,7 @@ categories:
   - design
 featuredImg: /images/grid-comparison.jpg
 baseLayout: container--right
-description: >-
-  If you're wondering how to start working with CSS Grid, here are three
-  strategies for adopting it into your workflow.
+description: "If you're wondering how to start working with CSS Grid, here are three strategies for adopting it into your workflow."
 grid-size: large
 adSpace: 
   image: /images/common-grid-promo.jpg
