@@ -5,6 +5,7 @@ categories:
   - development
   - javascript
   - 11ty
+  - JAMstack
 baseLayout: container--right
 description: "I love JavaScript, but I love rendered HTML much more, so I challenged myself to convert James' client-side JS code to something that rendered HTML. I wanted to do it as quickly and as concisely as possible."
 featuredImg: /images/icons/icon-512x512.png
