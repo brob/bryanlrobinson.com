@@ -28,7 +28,7 @@ module.exports = function(config) {
       });
 
       let filteredPosts = posts.filter(item => {
-        let matchedCount = 0;
+        let matchedCount = 0; // Counter to match our threshold
         item.data[categorizeBy].forEach(cat => {
           if (categoryArray.includes(cat)) {
             return matchedCount++
