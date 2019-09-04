@@ -3,6 +3,8 @@ layout: layouts/post.njk
 title: Create an Eleventy (11ty) theme based on a free HTML template
 categories:
   - development
+  - 11ty
+  - JAMstack
 baseLayout: container--right
 description: In this video series, we'll take a look at what it takes to start with a free HTML template found on Google and convert it for use with a static site generator (SSG). We'll be using my personal favorite SSG 11ty (EleventyJS).
 featuredImg: /images/icons/icon-512x512.png

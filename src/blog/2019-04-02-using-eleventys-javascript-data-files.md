@@ -3,6 +3,8 @@ layout: layouts/post.njk
 title: Using Eleventy's (11ty) JavaScript Data Files
 categories:
   - development
+  - 11ty
+  - JAMstack
 baseLayout: container--right
 description: I enjoy building workflows for pure static sites. I enjoy ingesting data into my build process instead of loading my client-side with fetches. In this example, we'll use Eleventy's ability to use a JavaScript file, to execute code to fetch data on site build, negating the need for task runners like Gulp.
 featuredImg: /images/icons/icon-512x512.png

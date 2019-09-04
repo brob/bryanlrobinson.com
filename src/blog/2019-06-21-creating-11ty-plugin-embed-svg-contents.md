@@ -4,6 +4,8 @@ title: Creating an 11ty Plugin - SVG Embed Tool
 categories:
   - development
   - design
+  - 11ty
+  - JAMstack
 baseLayout: container--right
 description: In the sites I’ve built with Eleventy (11ty) recently, I’ve found myself reusing a couple filters. This has involved me copying and pasting the code a lot. The solution? Create an 11ty Plugin.
 featuredImg: /images/eleventy-plugin-banner@2x.jpg

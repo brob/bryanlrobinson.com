@@ -4,6 +4,7 @@ title: Let's bring Fan Sites and webrings back!
 categories:
   - development
   - design
+  - JAMstack
 baseLayout: container--right
 description: In the days before the web was mainstream, it was a place of creation. First for education, then for every random idea that any creator had! As the web transitioned from a network of educational institutions to the consumer force it is today, the early adopters were technologists... AKA geeks! 
 featuredImg: /images/webrings-social-image.jpg

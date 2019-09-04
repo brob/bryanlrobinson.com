@@ -3,6 +3,7 @@ layout: layouts/post.njk
 title: Client work and the JAMstack
 categories:
   - development
+  - JAMstack
 baseLayout: container--right
 description: I worked at an agency for almost six years. In that time, I created only a handful of static sites. Part of this was because the agency had a custom content management system. The other part was an unwillingness to give up "dynamic" websites. I've created a website to aggregate resources for agencies and freelancers looking to branch out into the JAMstack.
 featuredImg: /images/icons/icon-512x512.png
