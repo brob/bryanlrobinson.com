@@ -40,9 +40,9 @@ Clients want contact forms, e-commerce, a CMS, comments, and more. Unless you've
 
 To fix this stigma, I'm putting together a resource center to help developers figure out even the weirdest of client requests. Let's face it, clients have varied and complicated needs. Let's make sure the JAMstack is up for it. Let's make sure agency developers and designers know of all the tools.
 
-## Meet your clients' desires with MyClientNeeds.com
+## Meet your clients' desires with MyClientWants.com
 
-Head over to [MyClientNeeds.com](https://myclientneeds.com) to view the resources I've compiled so far. The current categories are Forms, Content Management, Integrating with APIs, E-Commerce and User Generated Content.
+Head over to [MyClientWants.com](https://myclientwants.com) to view the resources I've compiled so far. The current categories are Forms, Content Management, Integrating with APIs, E-Commerce and User Generated Content.
 
 I've got a couple dozen resources listed, but I plan on that growing quickly. If you have any resources you want to share, [you can post an Issue on the GitHub repo](https://github.com/brob/butmyclientwants.com/issues/new/choose).
 
