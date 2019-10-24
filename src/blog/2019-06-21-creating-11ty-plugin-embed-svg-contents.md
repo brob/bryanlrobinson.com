@@ -81,7 +81,11 @@ module.exports = function(file) {
 
 {% endhighlight %}
 
-To use our filter in the template, we'll use the following syntax (in Nunjucks and Liquid): `{{ "/string/to/svg.svg" | svgContents }}`.
+To use our filter in the template, we'll use the following syntax (in Nunjucks and Liquid): 
+
+{% highlight html %}
+{{ "/string/to/svg.svg" | svgContents }}
+{% endhighlight %}
 
 By default, 11ty will accept the value of our variable in the template as the first argument of our function.
 
@@ -161,8 +165,11 @@ module.exports = function(config) {
 
 ### 4\. Use the filter in our templates
 
-In any Nunjucks or Liquid template, use a variable notation: `{{ "/string/to/svg.svg" | svgContents }}`.
+In any Nunjucks or Liquid template, use a variable notation: 
 
+{% highlight html %}
+{{ "/string/to/svg.svg" | svgContents }}
+{% endhighlight %}
 ## 11ty makes this super easy and fun
 
 If you've made an 11ty filter or custom tag, you can abstract them out to package to bring your favorite configuration options with you between projects.

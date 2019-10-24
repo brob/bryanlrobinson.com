@@ -67,8 +67,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .site-nav__item {
     display: flex;
-    align-items: stretch;
-    padding: 0 .5rem 1rem;
+    align-items: center;
+    padding: .4rem .5rem 1rem;
     margin: 0 .75rem 0 0;
     text-decoration: none;
     font-weight: 700;
@@ -80,16 +80,59 @@ h1, h2, h3, h4, h5, h6 {
 .site-nav__item:hover, .site-nav__item.active {
     border-bottom: 5px solid var(--transparent-black);
 }
+
+.nav-button {
+
+    display: inline-block;
+    color: var(--transparent-black);
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    border: 3px solid currentColor;
+    border-radius: 3px;
+    transition: .3s ease-out;
+    text-align: center;
+}
+.nav-button:hover {
+    background-color: rgba(233, 254, 225, .85);
+}
+.nav-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: .75rem;
+    padding: .5rem;
+    align-self: center;
+    border: 3px solid var(--transparent-black);
+}
+.nav-button:hover {
+    border: 3px solid var(--transparent-black);
+}
+.site-nav__item.nav-svg {
+    padding-left: 0;
+    padding-right: 0;
+    justify-self: center;
+}
+.nav-svg svg {
+    max-height: 1.5em;
+    line-height: 1.4em;
+}
+.nav-svg.youtube {
+    margin-top: 2px;
+}
+.twitter path {
+    fill: #00aced;
+}
 .logo {
     flex: 1;
     border: none;
+    min-width: 4rem;
+    align-self: center;
 }
 
 .logo img {
     min-height: 2rem;
     margin: auto;
 }
-@media (max-width: 640px) {
+@media (max-width: 900px) {
     .site-nav {
         flex-direction: column;
     }
@@ -109,7 +152,14 @@ h1, h2, h3, h4, h5, h6 {
         padding: 1rem 0;
         position: relative;
     }
-
+    .button.nav-button {
+        padding: .25rem;
+        margin-bottom: .25rem;
+        justify-content: center;
+    }
+    .button.nav-button:hover {
+        
+    }
     .site-nav__item {
         flex: 1 0 auto;
     }
@@ -138,6 +188,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 1rem;
     font-size: 2.25rem;
     line-height: 1.3em;
+}
+@media (max-width: 767px) {
+    .homepage-title {
+        font-size: 1.75rem;
+    }
 }
 .homepage-headshot {
     --aspect: 50vw;
