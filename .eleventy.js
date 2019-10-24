@@ -3,6 +3,7 @@ const dateFilter = require('nunjucks-date-filter');
 const markdownIt = require("markdown-it");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const blogTools = require("eleventy-plugin-blog-tools");
+const svgContents = require('eleventy-plugin-svg-contents');
 
 module.exports = function(config) {
     let mdOptions = {
@@ -13,6 +14,7 @@ module.exports = function(config) {
 
     config.setLibrary("md", markdownIt(mdOptions).use(require('markdown-it-anchor'), {}));
 
+    config.addPlugin(svgContents);  
     config.addPlugin(syntaxHighlight);
     config.addPlugin(pluginRss);
     config.addPlugin(blogTools);
