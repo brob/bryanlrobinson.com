@@ -5,13 +5,18 @@ pagination:
     size: 1
 permalink: /blog/category/{{ category.title | slug }}.html
 ---
+{% set lowercaseTitle = category.title | slug %}
+{% set bannerDescription %}{{ categories[lowercaseTitle].description }}{% endset %}
+
 {% extends "layouts/blog.njk" %}
 {% block pageTitle %}
 {{ category.title | capitalize }} Blog Posts -
 {% endblock pageTitle %}
 {% block bannerTitle %}
-{{ category.title | capitalize }} Blog Posts
+{{ categories[lowercaseTitle].title or category.title | capitalize  }} Blog Posts
 {% endblock bannerTitle %}
+
+
 
 {% block mainContent %}
     {% for post in category.posts %}

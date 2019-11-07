@@ -66,6 +66,7 @@
         {% block banner %}
             <h1 class="banner__title">{% block bannerTitle %}{{ title }}{% endblock bannerTitle %}</h1>
             {% if subhead %}<h2>{{ subhead }}</h2>{% endif %}
+            {% if bannerDescription %} <p>{{ bannerDescription }}</p>{% endif %}
         {% endblock banner %}
 
     </section>

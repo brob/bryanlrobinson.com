@@ -1,0 +1,10 @@
+{
+    "jamstack": {
+        "title": "JAMstack",
+        "description": "I absolutely adore the JAMstack. It is my favorite way to create websites. Here is a selection of posts about various techniques to get the most out of your JAM-y sites."
+    },
+    "css": {
+        "title": "CSS",
+        "description": "CSS used to be hard. It used to be full of hacks to do even simple things. That's not the case anymore. The past 5 years have been an amazing time to learn and work with CSS. Here are a selection of posts ranging from CSS Grid, to Flexbox to Custom Properties and ::after elements."
+    }
+}
