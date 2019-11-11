@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Create an Eleventy (11ty) theme based on a free HTML template
+updated: "11 November 2019"
 categories:
   - development
   - 11ty
@@ -121,4 +122,10 @@ In this tutorial, we'll tackle converting our homepage into a custom template. W
           height: 100%;" allowfullscreen></iframe>
 </figure>
 
-## Coming Soon: Contact Form, Deployment and NetlifyCMS tutorials
+## Contact form and Netlify Deploy
+
+In this tutorial, we'll flesh out the contact page, including making a variable for our map and setting up form submissions to Netlify. We'll connect up to GitHub and have Netlify automatically deploy our 11ty site every time we push to master.
+
+{% youtube "Rw75idHWPi4" %}
+
+## Coming Soon: NetlifyCMS tutorials
