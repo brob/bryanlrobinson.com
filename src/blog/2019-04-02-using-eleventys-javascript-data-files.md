@@ -9,11 +9,11 @@ baseLayout: container--right
 description: I enjoy building workflows for pure static sites. I enjoy ingesting data into my build process instead of loading my client-side with fetches. In this example, we'll use Eleventy's ability to use a JavaScript file, to execute code to fetch data on site build, negating the need for task runners like Gulp.
 featuredImg: /images/icons/icon-512x512.png
 adSpace: 
-  image: /images/practical-grid-heart.jpg
-  headline: Practical CSS Grid - Learn about this revolution in Web design!
-  description: Whether you're new to CSS Grid or have played with it, finding practical examples of this new layout mechanism is the best way to learn it's power. Sign up below for two hours of practical grid knowledge just for you!
-  linkText: Start Learning Now!
-  linkUrl: https://store.codecontemporary.com/practical-css-grid
+  image: /images/pseudo-power.jpg
+  headline: "Live Pseudo Selector Workshop"
+  description: "CSS has an amazing power set. Not the least of which is creating stylistic elements on the fly using Pseudo Elements (::after and ::before). We'll cover the basics of ::before and ::after and explore three different powerful design patterns utilizing them."
+  linkText: "Sign Up Now"
+  linkUrl: https://store.codecontemporary.com/nov-20-11-a-m-cst-pseudo-elements-basics-after-and-before
 sidebarOverride: "15"
 ---
 
