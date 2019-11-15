@@ -9,6 +9,7 @@ categories:
 baseLayout: container--right
 description: "I love JavaScript, but I love rendered HTML much more, so I challenged myself to convert James' client-side JS code to something that rendered HTML. I wanted to do it as quickly and as concisely as possible."
 featuredImg: /images/subgrid-promo.png
+featuredLarge: True
 adSpace: 
     image: /images/pseudo-power.jpg
     headline: "Live Pseudo Selector Workshop"
