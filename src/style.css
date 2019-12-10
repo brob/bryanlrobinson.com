@@ -304,6 +304,8 @@ p > code {
 }
 .category-list {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
     list-style: none;
     padding: 0;
 }
@@ -318,6 +320,13 @@ p > code {
     color: var(--transparent-black);
     text-decoration: none;
     font-size: .8rem;
+}
+
+@media (max-width: 640px) {
+    .category-list {
+        display: none;
+    }
+
 }
 
 .related-list {
