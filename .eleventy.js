@@ -4,6 +4,8 @@ const markdownIt = require("markdown-it");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const blogTools = require("eleventy-plugin-blog-tools");
 const svgContents = require('eleventy-plugin-svg-contents');
+const sanitizeHTML = require('sanitize-html')
+
 
 module.exports = function(config) {
     let mdOptions = {
@@ -18,6 +20,32 @@ module.exports = function(config) {
     config.addPlugin(syntaxHighlight);
     config.addPlugin(pluginRss);
     config.addPlugin(blogTools);
+
+
+
+    // Webmentions Filter
+    config.addFilter('webmentionsForUrl', (webmentions, url) => {
+      const allowedTypes = ['mention-of', 'in-reply-to', 'like-of']
+      const clean = content =>
+        sanitizeHTML(content, {
+          allowedTags: ['b', 'i', 'em', 'strong', 'a'],
+          allowedAttributes: {
+            a: ['href']
+          }
+        })
+
+      return webmentions
+        .filter(entry => entry['wm-target'] === url)
+        .filter(entry => allowedTypes.includes(entry['wm-property']))
+        .filter(entry => !!entry.content)
+        .map(entry => {
+          const { html, text } = entry.content
+          entry.content.value = html ? clean(html) : clean(text)
+          return entry
+        })
+    })
+
+
 
     config.addFilter("date", dateFilter);
     config.addCollection('posts', collection => {
