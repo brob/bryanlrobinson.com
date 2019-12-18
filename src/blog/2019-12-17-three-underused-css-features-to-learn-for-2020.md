@@ -132,3 +132,7 @@ There's even more you can do with things like `column-rule` for borders, and `co
 While the second half of the 2010s has been amazing for new CSS (things like Flexbox and Grid), it's important to remember there are a lot of additional powers from the past.
 
 The features mentioned in this post have been in browsers for years and don't get a lot of use. While experimenting with new cool toys this holiday season, don't forget to remember the past cool toys.
+
+## Question: What CSS feature do you think is underutilized by the industry as a whole?
+
+Send me a [Tweet to let me know](https://twitter.com/intent/tweet?url=https%3A%2F%2Fbryanlrobinson.com%2Fblog%2Fthree-underused-css-features-to-learn-for-2020%2F&text=My%20favorite%20underused%20CSS%20feature%20is%20...).
