@@ -2,5 +2,5 @@ node_modules
 dist
 # Local Netlify folder
 .netlify
-_cache
 .env
+_cache

@@ -11,11 +11,11 @@ description: "I love JavaScript, but I love rendered HTML much more, so I challe
 featuredImg: /images/subgrid-promo.png
 featuredLarge: True
 adSpace: 
-    image: /images/pseudo-power.jpg
-    headline: "Live Pseudo Selector Workshop"
-    description: "CSS has an amazing power set. Not the least of which is creating stylistic elements on the fly using Pseudo Elements (::after and ::before). We'll cover the basics of ::before and ::after and explore three different powerful design patterns utilizing them."
-    linkText: "Sign Up Now"
-    linkUrl: https://store.codecontemporary.com/nov-20-11-a-m-cst-pseudo-elements-basics-after-and-before
+  image: /images/common-grid-promo.jpg
+  headline: Free ebook - Common CSS Grid Patterns
+  description: CSS Grid is a revolution in web layout. With this ebook, I cover 3 design patterns that Grid solves easier, better and more creatively to help push our designs in better directions.
+  linkText: Download Now!
+  linkUrl: https://store.codecontemporary.com/solving-three-design-problems-with-css-grid/buy
 ---
 
 ![Promo image showing a snippet of the diagram of our grid and subgrid from below](/images/subgrid-topper.png)

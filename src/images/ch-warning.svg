@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="410" height="205" viewBox="0 0 410 205">
+  <defs>
+    <clipPath id="clip-Ch-warning">
+      <rect width="410" height="205"/>
+    </clipPath>
+  </defs>
+  <g id="Ch-warning" clip-path="url(#clip-Ch-warning)">
+    <rect width="410" height="205" fill="#fff"/>
+    <rect id="Rectangle_102" data-name="Rectangle 102" width="119" height="104" transform="translate(262 98)" fill="#38d39f"/>
+    <rect id="Rectangle_101" data-name="Rectangle 101" width="119" height="49" transform="translate(27 98)" fill="#38d39f"/>
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(33 92)" fill="none" stroke="#242424" stroke-width="3">
+      <rect width="119" height="49" stroke="none"/>
+      <rect x="-1.5" y="-1.5" width="122" height="52" fill="none"/>
+    </g>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(268 87)" fill="none" stroke="#242424" stroke-width="3">
+      <rect width="119" height="108" stroke="none"/>
+      <rect x="-1.5" y="-1.5" width="122" height="111" fill="none"/>
+    </g>
+    <text id="_0000" data-name="0000" transform="translate(33 132)" fill="#222" font-size="50" font-family="HelveticaNeue, Helvetica Neue" letter-spacing="0.05em"><tspan x="0" y="0">0000</tspan></text>
+    <text id="MMMM" transform="translate(268 81)" fill="#222" font-size="50" font-family="HelveticaNeue, Helvetica Neue" letter-spacing="0.05em"><tspan x="0" y="48">MM</tspan><tspan x="0" y="108">MM</tspan></text>
+    <path id="Path_1" data-name="Path 1" d="M592.948,396.5V377.95h23.895V396.5" transform="translate(-557.448 -309)" fill="none" stroke="#242424" stroke-width="3"/>
+    <path id="Path_2" data-name="Path 2" d="M604.9,357.95v-13.3" transform="translate(-558 -289)" fill="none" stroke="#242424" stroke-width="3"/>
+    <text id="_20px" data-name="20px" transform="translate(37 49)" fill="#5b9a25" font-size="10" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700" letter-spacing="-0.01em"><tspan x="0" y="0">20px</tspan></text>
+    <text id="_36px" data-name="36px" transform="translate(279 46)" fill="#a21b1b" font-size="10" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700" letter-spacing="-0.01em"><tspan x="0" y="0">36px</tspan></text>
+    <path id="Path_3" data-name="Path 3" d="M592.948,396.5V377.95h38.895V396.5" transform="translate(-322.448 -314)" fill="none" stroke="#242424" stroke-width="3"/>
+    <path id="Path_4" data-name="Path 4" d="M604.9,357.95v-13.3" transform="translate(-315.396 -294)" fill="none" stroke="#707070" stroke-width="3"/>
+    <line id="Line_1" data-name="Line 1" y2="51" transform="translate(270.5 82.5)" fill="none" stroke="#242424" stroke-width="1" stroke-dasharray="2 4"/>
+    <line id="Line_3" data-name="Line 3" y2="51" transform="translate(35.5 87.5)" fill="none" stroke="#242424" stroke-width="1" stroke-dasharray="2 4"/>
+    <line id="Line_2" data-name="Line 2" y2="51" transform="translate(309.5 82.5)" fill="none" stroke="#242424" stroke-width="1" stroke-dasharray="2 4"/>
+    <line id="Line_4" data-name="Line 4" y2="51" transform="translate(59.5 87.5)" fill="none" stroke="#242424" stroke-width="1" stroke-dasharray="2 4"/>
+    <text id="_4ch" data-name="4ch" transform="translate(160 49)" fill="#262626" font-size="50" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700" letter-spacing="-0.01em"><tspan x="0" y="0">4ch</tspan></text>
+    <text id="_1ch_20px" data-name="1ch = ~20px" transform="translate(203 66)" fill="#262626" font-size="10" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700" letter-spacing="-0.01em"><tspan x="-28.195" y="0">1ch = ~20px</tspan></text>
+  </g>
+</svg>
