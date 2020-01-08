@@ -22,7 +22,11 @@
 {% block mainContent %}
 
 <section class="blog-content">
+
     {{ content | safe }}
+
+    {% include "webmentionlist.njk" %}
+
 
     <aside class="blog-related" {% if sidebarOverride %}style="--aside-height: {{ sidebarOverride }};"{% endif %}>       
     {% block related %}

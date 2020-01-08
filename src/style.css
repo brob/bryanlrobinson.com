@@ -757,3 +757,66 @@ input[type="submit"]:hover {
  .token.italic {
      font-style: italic;
  }
+
+ /* Webmention Section */
+
+.webmentions {
+    display:block;
+    text-align: left;
+}
+.webmentions__facepile {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.webmentions__face {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: none;
+}
+.webmentions__list {
+    list-style-type: none;
+    padding:0;
+    grid-column: breakout;
+}
+.webmentions__item {
+    margin-bottom: 1rem;
+}
+.webmentions__list > .webmentions__item + .webmentions__item {
+    border-top: 1px solid;
+    padding-top: 1rem;
+}
+
+/* Single Webmention */
+
+.webmention {
+    display:block;
+}
+.webmention__meta,
+.webmention__author {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.webmention__meta {
+    margin-bottom:.5rem;
+    font-size: .85rem;
+}
+.webmention__content {
+    font-size: .85rem;
+}
+.webmention__author {
+    margin-right:.25rem;
+}
+.webmention__author__photo {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right:.5rem;
+}
+.webmention__pubdate {
+    font-style: italic;
+}
