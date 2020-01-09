@@ -70,4 +70,4 @@ Along with the series I mentioned in the intro from Brian Rinaldi, I also [asked
 
 I'm excited to play with all the new tools, services and concepts in the JAMstack. Join me and you'll be in for a fun new year.
 
-What are you most looking forward to in the JAMstack in 2020? [Let me know on Twitter](https://twitter.com/intent/tweet?text=I'm%20looking%20forward%20...to&url=&via=brob).
+What are you most looking forward to in the JAMstack in 2020? [Let me know on Twitter](https://twitter.com/intent/tweet?text=I'm%20looking%20forward%20to%20...&url=https://bryanlrobinson.com/blog/three-JAMstack-concepts-to-watch-in-2020/&via=brob).
