@@ -6,7 +6,7 @@ categories:
   - JAMstack
 baseLayout: container--right
 description: "This article covers three topics I think will help define the JAMstack in 2020."
-featuredImg: /images/codepen-promo.png
+featuredImg: /images/jamstack-2020.png
 featuredLarge: True
 adSpace: 
   image: /images/jamstack-pod-promo.svg
