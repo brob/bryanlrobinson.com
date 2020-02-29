@@ -3,7 +3,8 @@ class TwitchPromo extends HTMLElement {
         super();
 
         this.attachShadow({mode: 'open'});
-        this.username = this.getAttribute('username');    
+        this.username = this.getAttribute('username'); 
+        this.clientId = this.getAttribute('clientId');   
     }
 
     async connectedCallback() {
@@ -12,8 +13,9 @@ class TwitchPromo extends HTMLElement {
     }
 
     async getTwitchContent() {
-        let url = `https://api.twitch.tv/helix/streams?user_login=${this.username}`
-        const request = new Request(url, {method: 'GET', headers: {'Client-ID': '5vil9sjm37lx0n882v1lvxcvce2ugf'} });
+        // TODO: Abstract out client id?
+        const url = `https://api.twitch.tv/helix/streams?user_login=${this.username}`
+        const request = new Request(url, {method: 'GET', headers: {'Client-ID': this.clientId} });
         const response = await fetch(request);
         const json = await response.json();
         if (json.data) return json.data[0];
