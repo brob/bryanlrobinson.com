@@ -20,10 +20,6 @@ class TwitchPromo extends HTMLElement {
 
     }
 
-    removePromo() {
-        return this.remove();
-    }
-
     styleComponent() {
         let styleString = `
             * {
