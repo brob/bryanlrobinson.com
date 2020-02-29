@@ -1,20 +1,14 @@
 class TwitchPromo extends HTMLElement {
     constructor() {
-        // Always call super first in constructor
         super();
 
         this.attachShadow({mode: 'open'});
-
-        this.username = this.getAttribute('username');
-
-        
-
-        
+        this.username = this.getAttribute('username');    
     }
 
     async connectedCallback() {
         this.TWITCH_DATA = await this.getTwitchContent();
-        this.render();
+        if (this.TWITCH_DATA) this.render();
     }
 
     async getTwitchContent() {
@@ -27,12 +21,10 @@ class TwitchPromo extends HTMLElement {
     }
 
     removePromo() {
-
         return this.remove();
     }
 
     styleComponent() {
-
         let styleString = `
             * {
                 margin: 0;
@@ -95,15 +87,16 @@ class TwitchPromo extends HTMLElement {
                 position: relative;
             }
             @media (max-width: 640px) {
-                .twitch-promo {
+                .twitch-promo-container {
                     bottom: .5rem;
                     right: .5rem;
                     width: calc(100% - 1rem);
+                }
+                .twitch-promo {
                     display: grid;
                     grid-template-columns: .25fr 1fr;
                     grid-gap: .5rem;
                     align-items: center;
-
                 }
                 .twitch-promo > * {
                     margin: 0;
@@ -118,9 +111,7 @@ class TwitchPromo extends HTMLElement {
     }
 
     async render() {
-        const data = await this.TWITCH_DATA;
-
-
+        const data = this.TWITCH_DATA
         if (data) {
             this.shadowRoot.innerHTML = `
                 <style>
