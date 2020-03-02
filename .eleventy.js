@@ -7,6 +7,9 @@ const svgContents = require('eleventy-plugin-svg-contents');
 const sanitizeHTML = require('sanitize-html')
 
 
+require('dotenv').config()
+
+
 module.exports = function(config) {
     let mdOptions = {
       html: true,
@@ -78,6 +81,7 @@ module.exports = function(config) {
     config.addPassthroughCopy("src/style.css");
     config.addPassthroughCopy("src/service-worker.js");
     config.addPassthroughCopy("src/manifest.json");
+    config.addPassthroughCopy("src/js");
 
 
   return {

@@ -572,6 +572,18 @@ input[type="submit"]:hover {
     
 }
 
+.alert {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alert svg {
+    height: 1em;
+    margin-right: 1ch;
+}
+
+
 
 
 /* CARBON STYLES */
