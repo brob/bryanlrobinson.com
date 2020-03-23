@@ -39,8 +39,9 @@
                 {% set promoAlt %}
                     Promo Image for {{ adSpace.headline }}
                 {% endset %}
+                {% set promoImage %}{{site.url}}{{adSpace.image}}{% endset %}
                 {% respimg
-                    adSpace.image,
+                    promoImage,
                     promoAlt,
                     "(min-width: 48em) 48em, 100vw"
                 %}

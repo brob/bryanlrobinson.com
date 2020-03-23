@@ -25,6 +25,10 @@ module.exports = function(config) {
     config.addPlugin(pluginRss);
     config.addPlugin(blogTools);
 
+// Update the plugin
+// Have class option
+// Have option for automatic domain prepend
+
 
     config.cloudinaryCloudName = 'brob';
     config.srcsetWidths = [ 320, 640, 960, 1280 ];
