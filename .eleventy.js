@@ -33,8 +33,16 @@ module.exports = function(config) {
     config.cloudinaryCloudName = 'brob';
     config.srcsetWidths = [ 320, 640, 960, 1280 ];
     config.fallbackWidth = 640;
-    config.addPlugin( pluginRespimg );
 
+    config.addShortcode('respimg', (path, alt, sizes, className) => {
+      const fetchBase = `https://res.cloudinary.com/${config.cloudinaryCloudName}/image/fetch/`;
+      const src = `${fetchBase}q_auto,f_auto,w_${config.fallbackWidth}/${path}`;
+      const srcset = config.srcsetWidths.map(w => {
+        return `${fetchBase}q_auto,f_auto,w_${w}/${path} ${w}w`;
+      }).join(', ');
+
+      return `<img src="${src}" srcset="${srcset}" class="${className ? className : "respimg"}" sizes="${sizes ? sizes : '100vw'}" alt="${alt ? alt : ''}">`;
+    });
 
     // Webmentions Filter
     config.addFilter('webmentionsForUrl', (webmentions, url) => {

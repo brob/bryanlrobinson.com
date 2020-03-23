@@ -195,11 +195,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 .homepage-headshot {
-    border-radius: 50%;
-    shape-outside: margin-box;
-    margin: 0 auto 1rem;
-}
-.homepage-headshot img {
     --aspect: 50vw;
     border-radius: 50%;
     width: var(--aspect);
@@ -210,7 +205,8 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 600px;
     object-fit: cover;
     border: 5px solid #111;
-    
+    shape-outside: margin-box;
+    margin: 0 auto 1rem;
     display: block;
 
 }
