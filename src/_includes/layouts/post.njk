@@ -36,7 +36,15 @@
                 {% if adSpace.linkUrl %}
                     <a href="{{ adSpace.linkUrl }}">
                 {% endif %}
-                <img src="{{ adSpace.image }}" alt="">
+                {% set promoAlt %}
+                    Promo Image for {{ adSpace.headline }}
+                {% endset %}
+                {% respimg
+                    adSpace.image,
+                    promoAlt,
+                    "(min-width: 48em) 48em, 100vw"
+                %}
+
                 {% if adSpace.headline %}
                     <h4>{{ adSpace.headline }}</h4>
                 {% endif %}
