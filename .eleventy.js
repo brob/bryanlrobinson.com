@@ -5,6 +5,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const blogTools = require("eleventy-plugin-blog-tools");
 const svgContents = require('eleventy-plugin-svg-contents');
 const sanitizeHTML = require('sanitize-html')
+const pluginRespimg = require( "eleventy-plugin-respimg" );
 
 
 require('dotenv').config()
@@ -24,6 +25,11 @@ module.exports = function(config) {
     config.addPlugin(pluginRss);
     config.addPlugin(blogTools);
 
+
+    config.cloudinaryCloudName = 'brob';
+    config.srcsetWidths = [ 320, 640, 960, 1280 ];
+    config.fallbackWidth = 640;
+    config.addPlugin( pluginRespimg );
 
 
     // Webmentions Filter

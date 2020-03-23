@@ -3,7 +3,13 @@
 {% set featuredPosts = collections.posts | limit(2) %}
 {% block bannerClass %}banner--homepage{% endblock %}
 {% block banner %}
-    <img class="homepage-headshot" src="/images/headshot.jpg" alt="Bryan's smiling face, glasses slightly askew">
+<div class="homepage-headshot">
+    {% respimg
+        "https://bryanlrobinson.com/images/headshot.jpg",
+        "Bryan's smiling face, glasses slightly askew",
+        "(min-width: 48em) 48em, 100vw"
+    %}
+</div>
     <h1 class="homepage-title">{{ title }}</h1>
     <h2 class="homepage-headline">{{ headline }}</h2>
     <p>{{ description }}</p>
@@ -44,22 +50,39 @@
     <h3>A Selection of my Projects and Courses</h3>
     <div class="auto-grid">
         <a href="http://practicalcssgrid.com" class="projects__item">
-            <img src="/images/practical-grid-heart.jpg" alt="Practical Grid promo image">
+            {% respimg
+                "https://bryanlrobinson.com/images/practical-grid-heart.jpg",
+                "Practical Grid promo image",
+                "(min-width: 48em) 48em, 100vw"
+            %}  
+
             <h4>Practical CSS Grid</h4>
             <p>Learn CSS Grid in 2 hours with 7 practical examples</p>
         </a>
         <a href="https://peerreviews.dev" class="projects__item">
-            <img src="/images/peerreview-banner.jpg" alt="PeerReviews promo image">
+            {% respimg
+                "https://bryanlrobinson.com/images/peerreview-banner.jpg",
+                "PeerReviews promo image",
+                "(min-width: 48em) 48em, 100vw"
+            %}
             <h4>PeerReviews.dev</h4>
             <p>Get a Code or Design review from industry professionals Bryan Robinson and James Quick</p>
         </a>
         <a href="https://thatsmyjamstack.com/" class="projects__item">
-            <img src="/images/jamstack-pod-promo.svg" alt="Promo image for That's My JAMstack">
+            {% respimg
+                "https://bryanlrobinson.com/images/jamstack-pod-promo.svg",
+                "Promo image for That's My JAMstack",
+                "(min-width: 48em) 48em, 100vw"
+            %}
             <h4>That's My JAMstack podcast</h4>
             <p>A podcast interviewing the amazing people that make the JAMstack community great</p>
         </a>
         <a href="https://myclientwants.com" class="projects__item">
-            <img src="/images/client-wants.jpg" alt="My Client Wants promo image">
+            {% respimg
+                "https://bryanlrobinson.com/images/client-wants.jpg",
+                "My Client Wants promo image",
+                "(min-width: 48em) 48em, 100vw"
+            %}
             <h4>My Client Wants</h4>
             <p>A collection of resources for using the JAMstack in client work</p>
         </a>
