@@ -6,6 +6,7 @@ const blogTools = require("eleventy-plugin-blog-tools");
 const svgContents = require('eleventy-plugin-svg-contents');
 const sanitizeHTML = require('sanitize-html')
 const pluginRespimg = require( "eleventy-plugin-respimg" );
+const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 
 
 require('dotenv').config()
@@ -29,6 +30,7 @@ module.exports = function(config) {
 // Have class option
 // Have option for automatic domain prepend
 
+    config.addTransform('htmlmin', htmlMinTransform);
 
     config.cloudinaryCloudName = 'brob';
     config.srcsetWidths = [ 320, 640, 960, 1280 ];
