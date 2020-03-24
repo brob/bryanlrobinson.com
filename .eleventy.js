@@ -41,7 +41,7 @@ module.exports = function(config) {
         return `${fetchBase}q_auto,f_auto,w_${w}/${path} ${w}w`;
       }).join(', ');
 
-      return `<img src="${src}" srcset="${srcset}" class="${className ? className : "respimg"}" sizes="${sizes ? sizes : '100vw'}" alt="${alt ? alt : ''}">`;
+      return `<img loading="lazy" src="${src}" srcset="${srcset}" class="${className ? className : "respimg"}" sizes="${sizes ? sizes : '100vw'}" alt="${alt ? alt : ''}">`;
     });
 
     // Webmentions Filter
