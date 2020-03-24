@@ -1,3 +1,9 @@
+ {% set coreCSS = [
+    'base.css',
+    'banner.css'
+] %}   
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +14,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed|IBM+Plex+Sans:300,300i&display=fallback" rel="stylesheet">
 
-    <link rel="stylesheet" href="/style.css">
+    
+    <style>
+    {{ helper.getCSS(coreCSS, layoutStyles) | safe }}
     {% block cssoverride %}{% endblock cssoverride %}
+    </style>
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
         <link rel="alternate" type="application/rss+xml" title="Articles RSS Feed" href="{{ site.url }}/feed.xml" />
         <link href="https://twitter.com/brob" rel="me">

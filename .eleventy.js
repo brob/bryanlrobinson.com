@@ -67,7 +67,6 @@ module.exports = function(config) {
     })
 
 
-
     config.addFilter("date", dateFilter);
     config.addCollection('posts', collection => {
         return collection.getFilteredByTag('posts').reverse();

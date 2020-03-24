@@ -1,4 +1,9 @@
 {% extends "layouts/base.njk" %}
+{% set layoutStyles = [ 
+            'homepage.css',
+            'components/article-promo.css',
+            'components/hire-me.css' ]%}
+
 
 {% set featuredPosts = collections.posts | limit(2) %}
 {% block bannerClass %}banner--homepage{% endblock %}
