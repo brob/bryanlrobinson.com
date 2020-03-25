@@ -8,7 +8,8 @@ categories:
   - CSS
 baseLayout: container--right
 description: "A few weeks ago, Zach Leatherman announced that he was going to change the Built with 11ty section 11ty's documentation. He was going to create a performance leaderboard to showcase performant projects using the tool. I wanted my site to break into the top 100!"
-featuredImg: /images/jamstack-2020.png
+featuredImg: /images/performance-audit/featured-image.png
+featuredLarge: true
 adSpace: 
   image: /images/jamstack-pod-promo.svg
   headline: That's My JAMstack podcast
@@ -32,9 +33,8 @@ This was all to be invisible changes to increase the performance of my site as i
 
 ## The path from Lighthouse 95 to Lighthouse 100
 
-<!-- {% respimg "https://bryanlrobinson.com/images/performance-audit/current-audit.jpg" "Current Lighthouse score Criteria as detailed below" "(max-width: 640px) 640px, 900px" %} -->
+{% respimg "https://bryanlrobinson.com/images/performance-audit/current-audit.jpg" "Current Lighthouse score Criteria as detailed below" "(max-width: 640px) 640px, 900px" %}
 
-![Current Lighthouse score Criteria as detailed below](/images/performance-audit/current-audit.jpg)
 
 I started by running a Lighthouse report on my current site. When run from Chrome's Audit panel, I registered an 80\. When run from the Lighthouse CLI tool -- which is what Zach uses -- I got a 95\. 
 
@@ -209,10 +209,7 @@ We'll see this weekend -- and I'll report back -- if I break the top 100\. If th
 
 ## Final Results! Performance Score of 100
 
-<!-- {% respimg "https://bryanlrobinson.com/images/performance-audit/after-changes.jpg" "Final results: Performance score up to 100. Details follow" "(max-width: 640px) 640px, 900px" %} -->
-
-
-![Final results: Performance score up to 100. Details follow](/images/performance-audit/after-changes.jpg)
+{% respimg "https://bryanlrobinson.com/images/performance-audit/after-changes.jpg" "Final results: Performance score up to 100. Details follow" "(max-width: 640px) 640px, 900px" %}
 
 * Performance Score: 100 (5 points up)
 * First Contentful Paint: 1.1s (.6s decrease)
