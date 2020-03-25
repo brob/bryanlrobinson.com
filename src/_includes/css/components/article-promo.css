@@ -1,0 +1,14 @@
+.article {
+    margin-bottom: 2rem;
+}
+.article > * {
+    margin: 0;
+}
+.article__date {
+    display: block;
+    font-size: .8em;
+    margin-bottom: .5rem;
+}
+.article__description {
+
+}

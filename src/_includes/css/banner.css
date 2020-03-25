@@ -1,0 +1,17 @@
+
+.banner {
+    background-color: var(--faded-bg);
+    padding: 1.5rem 2rem 2rem;
+    border-top: 5px solid var(--transparent-black);
+    border-bottom: 5px solid var(--transparent-black);
+}
+.banner__title {
+    font-size: 3rem;
+    line-height: 1.1em;
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .banner__title {
+        font-size: 2.25rem;
+    }
+}

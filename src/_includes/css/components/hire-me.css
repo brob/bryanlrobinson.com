@@ -1,0 +1,10 @@
+.hire-me {
+    background-color: var(--faded-bg);
+    padding: 1rem 1.5rem;
+    border: 5px solid var(--transparent-black);
+    grid-column: 2;
+}
+.hire-me .button {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}

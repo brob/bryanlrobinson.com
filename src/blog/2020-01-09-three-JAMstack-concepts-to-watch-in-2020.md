@@ -13,8 +13,15 @@ adSpace:
   headline: That's My JAMstack podcast
   linkText: Listen Now!
   linkUrl: https://thatsmyjamstack.com
+templateEngineOverride: njk, md
 ---
-![Three JAMstack things to watch in 2020 graphic](/images/jamstack-2020.svg)
+
+{% respimg
+    "https://bryanlrobinson.com/images/jamstack-2020.svg",
+    "Three JAMstack things to watch in 2020 graphic",
+    "(max-width: 640px) 640px, 900px"
+%}
+
 
 In the second half of 2019, I took my passing interest in the JAMstack and solidified it as one of my main focuses. I'm excited about the prospect of what lies in store in 2020.
 
