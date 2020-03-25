@@ -31,6 +31,8 @@ This was all to be invisible changes to increase the performance of my site as i
 
 ## The path from Lighthouse 95 to Lighthouse 100
 
+<!-- {% respimg "https://bryanlrobinson.com/images/performance-audit/current-audit.jpg" "Current Lighthouse score Criteria as detailed below" "(max-width: 640px) 640px, 900px" %} -->
+
 ![Current Lighthouse score Criteria as detailed below](/images/performance-audit/current-audit.jpg)
 
 I started by running a Lighthouse report on my current site. When run from Chrome's Audit panel, I registered an 80\. When run from the Lighthouse CLI tool -- which is what Zach uses -- I got a 95\. 
@@ -206,7 +208,18 @@ We'll see this weekend -- and I'll report back -- if I break the top 100\. If th
 
 ## Final Results! Performance Score of 100
 
-Replace after stream
+<!-- {% respimg "https://bryanlrobinson.com/images/performance-audit/after-changes.jpg" "Final results: Performance score up to 100. Details follow" "(max-width: 640px) 640px, 900px" %} -->
+
+
+![Final results: Performance score up to 100. Details follow](/images/performance-audit/after-changes.jpg)
+
+* Performance Score: 100 (5 points up)
+* First Contentful Paint: 1.1s (.6s decrease)
+* Speed Index: 1.7s (.9s decrease)
+* Time to Interactive 2.4s (1.1s decrease)
+* First Meaningful Paint 1.1s (.6s decrease)
+* First CPU Idle: 1.2s (2.3s decrease)
+* Max Potential First Input Delay: 120ms (2,320ms decrease)
 
 ## Why is this important?
 
