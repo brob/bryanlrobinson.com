@@ -1,10 +1,11 @@
 ---
 layout: "layouts/post.njk"
-title: "Climbing the 11ty Performance leaderboard"
+title: "Climbing the 11ty Performance leaderboard with Cloudinary, critical CSS and more"
 categories:
   - development
   - JAMstack
   - 11ty
+  - CSS
 baseLayout: container--right
 description: "A few weeks ago, Zach Leatherman announced that he was going to change the Built with 11ty section 11ty's documentation. He was going to create a performance leaderboard to showcase performant projects using the tool. I wanted my site to break into the top 100!"
 featuredImg: /images/jamstack-2020.png
