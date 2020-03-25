@@ -1,0 +1,12 @@
+
+.adspace {
+    margin-bottom: 1rem;
+}
+.adspace * {
+    margin: 0;
+}
+.adspace img {
+    max-height: 7rem;
+    width: 100%;
+    object-fit: cover;
+}

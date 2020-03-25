@@ -1,6 +1,13 @@
  {% if page.adSpace %}
 <div class="ad-space">
-        {% if page.adSpace.image %}<img src="{{ page.adSpace.image }}" alt="Promo Image for {{ page.adSpace.headline }}" class="ad-space__image">{% endif %}
+        {% if page.adSpace.image %}
+        {% respimg
+                page.adSpace.image,
+                Promo Image for {{ page.adSpace.headline }},
+                "(min-width: 48em) 48em, 100vw"
+        %}
+
+        {% endif %}
         {% if page.adSpace.headline %}<h3 class="ad-space__headline">{{ page.adSpace.headline }}</h3>{% endif %}
         {% if page.adSpace.description %}<p class="ad-space__description">{{ page.adSpace.description }}</p>{% endif %}
         {% if page.adSpace.linkUrl %}<a target="_blank" href="{{ page.adSpace.linkUrl }}" class="button ad-space__button">{{ page.adSpace.linkText }}</a>{% endif %}

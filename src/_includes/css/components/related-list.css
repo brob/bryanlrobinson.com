@@ -1,0 +1,15 @@
+
+.related-list {
+    margin: 0;
+    list-style: square;
+    padding-left: 2ch;
+    color: #555;
+}
+.related-list__item {
+    margin-bottom: .5rem;
+    padding: 0;
+
+}
+.related-list__item a {
+    color: #555;
+}

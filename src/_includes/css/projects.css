@@ -1,0 +1,26 @@
+
+.projects__item {
+    display: block;
+    box-shadow: 0 0 1px #000;
+    text-decoration: none;
+    color: #333;
+    transition: .3s ease-out;
+}
+.projects__item:hover {
+    box-shadow: 0 0 3px #000;
+}
+.projects__item * {
+    margin: 0;
+}
+.projects__item img {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+}
+.projects__item * + * {
+    padding: 0 1rem;
+    margin-top: .5rem;
+}
+.projects__item :last-child {
+    margin-bottom: 1rem;
+}

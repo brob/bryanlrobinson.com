@@ -1,6 +1,6 @@
 {% extends "layouts/base.njk" %}
 {% set contentClass = "post-content" %}
-
+{% set layoutStyles = [ 'articles.css', 'components/article-promo.css', 'components/ad-space.css', 'components/related-list.css' ]%}
 
 
 {% block banner %}
@@ -36,7 +36,16 @@
                 {% if adSpace.linkUrl %}
                     <a href="{{ adSpace.linkUrl }}">
                 {% endif %}
-                <img src="{{ adSpace.image }}" alt="">
+                {% set promoAlt %}
+                    Promo Image for {{ adSpace.headline }}
+                {% endset %}
+                {% set promoImage %}{{site.url}}{{adSpace.image}}{% endset %}
+                {% respimg
+                    promoImage,
+                    promoAlt,
+                    "600px"
+                %}
+
                 {% if adSpace.headline %}
                     <h4>{{ adSpace.headline }}</h4>
                 {% endif %}

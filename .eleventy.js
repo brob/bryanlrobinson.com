@@ -5,6 +5,8 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const blogTools = require("eleventy-plugin-blog-tools");
 const svgContents = require('eleventy-plugin-svg-contents');
 const sanitizeHTML = require('sanitize-html')
+const pluginRespimg = require( "eleventy-plugin-respimg" );
+const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 
 
 require('dotenv').config()
@@ -24,7 +26,25 @@ module.exports = function(config) {
     config.addPlugin(pluginRss);
     config.addPlugin(blogTools);
 
+// Update the plugin
+// Have class option
+// Have option for automatic domain prepend
 
+    config.addTransform('htmlmin', htmlMinTransform);
+
+    config.cloudinaryCloudName = 'brob';
+    config.srcsetWidths = [ 320, 640, 960, 1280 ];
+    config.fallbackWidth = 640;
+
+    config.addShortcode('respimg', (path, alt, sizes, className) => {
+      const fetchBase = `https://res.cloudinary.com/${config.cloudinaryCloudName}/image/fetch/`;
+      const src = `${fetchBase}q_auto,f_auto,w_${config.fallbackWidth}/${path}`;
+      const srcset = config.srcsetWidths.map(w => {
+        return `${fetchBase}q_auto,f_auto,w_${w}/${path} ${w}w`;
+      }).join(', ');
+
+      return `<img loading="lazy" src="${src}" srcset="${srcset}" class="${className ? className : "respimg"}" sizes="${sizes ? sizes : '100vw'}" alt="${alt ? alt : ''}">`;
+    });
 
     // Webmentions Filter
     config.addFilter('webmentionsForUrl', (webmentions, url) => {
@@ -47,7 +67,6 @@ module.exports = function(config) {
           return entry
         })
     })
-
 
 
     config.addFilter("date", dateFilter);
