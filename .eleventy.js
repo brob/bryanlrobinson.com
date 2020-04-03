@@ -5,7 +5,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const blogTools = require("eleventy-plugin-blog-tools");
 const svgContents = require('eleventy-plugin-svg-contents');
 const sanitizeHTML = require('sanitize-html')
-const pluginRespimg = require( "../eleventy-respimg" );
+// const pluginRespimg = require( "../eleventy-respimg" );
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 
 
