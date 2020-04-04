@@ -55,7 +55,7 @@ In my old flow, Gulp would spit the data out into a JSON object in a file that N
 
 {% highlight js %}
 module.exports = {
-    data1: "Some string,
+    data1: "Some string",
     data2: ["peaches", "plums"]
 }
 {% endhighlight %}
