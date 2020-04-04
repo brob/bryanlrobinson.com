@@ -65,7 +65,15 @@
 <body>
     
     <nav class="site-nav">
-        <a class="logo" href="/"><img src="/images/logo.svg" alt="<br> logo"></a>
+        <a class="logo" href="/">
+          {% respimg 
+              "https://bryanlrobinson.com/images/logo.svg",
+              "<br> logo",
+              "150px",
+              "",
+              "150"
+              %}
+        </a>
         <div class="nav-items">
             <a class="site-nav__item" href="/about">About</a>
             <a class="site-nav__item" href="/blog">Blog</a>
