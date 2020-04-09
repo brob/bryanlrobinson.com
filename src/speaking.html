@@ -10,23 +10,12 @@ asideHeight: "6"
     <p>Currently booking events for Q4 2019 and 2020. See what I can offer below!</p>
     <table class="events">
         <tr class="event">
-            <td><strong>You're a Designer, I promise</strong></td>
-            <td>DevNexus</td>
-            <td>February 20, 2020</td>
-            <td><a href="https://devnexus.com/presentations/4594/">See more</a></td>
+            <td><strong>The DIY Web: Where we came from; what we’ve lost; where we can go</strong></td>
+            <td>JAMstack SF Meetup</td>
+            <td>April 22, 2020</td>
+            <td><a href="https://www.meetup.com/jamstack-sf/events/269697699/">See more</a></td>
         </tr>
-        <tr class="event">
-            <td><strong>The New CSS: Learn to Love Styles</strong></td>
-            <td>php[tek]</td>
-            <td>May 19, 2020</td>
-            <td><a href="https://tek.phparch.com/">See more</a></td>
-        </tr>
-        <tr class="event">
-            <td><strong>Static is the New Dynamic</strong></td>
-            <td>php[tek]</td>
-            <td>May 20, 2020</td>
-            <td><a href="https://tek.phparch.com/">See more</a></td>
-        </tr>
+       
     </table>
 </section>
 
@@ -34,11 +23,11 @@ asideHeight: "6"
 
 <main class="speaking-grid">
         {% for presentation in collections.presentations %}
-            <article class="presentation">
-                <h2><a href="{{ presentation.url }}">{{ presentation.data.title }}</a></h3>
-                <div class="description">
-                    <p>{{ presentation.data.description }}</p>
-                </div>
+            <article class="presentation article">
+                <h2 class="article__title"><a href="{{ presentation.url }}">{{ presentation.data.title }}</a></h2>
+                <p class="article__description">
+                    {{ presentation.data.description }}
+                </p>
             </article>
         {% endfor %}
 </main>
