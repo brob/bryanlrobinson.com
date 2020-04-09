@@ -75,10 +75,11 @@
               %}
         </a>
         <div class="nav-items">
-            <a class="site-nav__item" href="/about">About</a>
-            <a class="site-nav__item" href="/blog">Blog</a>
-            <a class="site-nav__item" href="/work-with-bryan">Work with Me</a>
-            <a class="site-nav__item" href="/speaking">Speaking</a>
+          
+            <a class="site-nav__item {{ 'active' if '/about' in page.url }}" href="/about">About</a>
+            <a class="site-nav__item {{ 'active' if '/blog' in page.url }}" href="/blog">Blog</a>
+            <a class="site-nav__item {{ 'active' if '/work' in page.url }}" href="/work-with-bryan">Work with Me</a>
+            <a class="site-nav__item {{ 'active' if '/speaking' in page.url }}" href="/speaking">Speaking</a>
             <a class="site-nav__item nav-button button" href="/free-advice/">Free Advice</a>
             <a class="site-nav__item twitter nav-svg" href="https://twitter.com/brob">{{ "/src/images/03-twitter.svg" | svgContents | safe }}</a>
             <a class="site-nav__item nav-svg youtube" href="https://www.youtube.com/channel/UCTLrD1MTRbjxtFCRaFXqkdQ">{{ "/src/images/youtube.svg" | svgContents | safe }}</a>
