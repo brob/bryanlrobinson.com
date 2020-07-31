@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: 3 Strategies for Getting Started with CSS Grid
 categories:
   - development
-  - grid
+  - Grid
   - design
 featuredImg: /images/grid-comparison.jpg
 baseLayout: container--right

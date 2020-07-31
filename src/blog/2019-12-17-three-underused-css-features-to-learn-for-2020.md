@@ -4,7 +4,7 @@ title: "3 underused CSS features to learn for 2020"
 categories:
   - development
   - design
-  - css
+  - CSS
 baseLayout: container--right
 description: "CSS has a whole lot of power. There are properties and values for any number of amazing designs. With all that power comes a lot to remember. If you don't know about all the tools in your toolbox, how will you find the right one for the job? In this post, we'll take a look at three lesser-used, but super useful tools for various jobs in CSS."
 featuredImg: /images/css-features-featured-image.png
