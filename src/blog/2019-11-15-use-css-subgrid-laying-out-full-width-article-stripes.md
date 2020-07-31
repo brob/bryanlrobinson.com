@@ -4,8 +4,8 @@ title: "Use CSS Subgrid to layout full-width content stripes in an article templ
 categories:
   - development
   - design
-  - css
-  - grid
+  - CSS
+  - Grid
 baseLayout: container--right
 description: "I love JavaScript, but I love rendered HTML much more, so I challenged myself to convert James' client-side JS code to something that rendered HTML. I wanted to do it as quickly and as concisely as possible."
 featuredImg: /images/subgrid-promo.png

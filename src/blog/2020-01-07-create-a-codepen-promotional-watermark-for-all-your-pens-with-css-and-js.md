@@ -3,7 +3,7 @@ layout: "layouts/post.njk"
 title: "Create a Codepen promo watermark with no additional HTML, CSS or JS"
 categories:
   - development
-  - css
+  - CSS
   - js
 baseLayout: container--right
 description: "In this tutorial, we'll cover the basics of adding a watermark to a CodePen Pen with no additional html, css or js on that pen."

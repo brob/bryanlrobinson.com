@@ -7,7 +7,7 @@ const svgContents = require('eleventy-plugin-svg-contents');
 const sanitizeHTML = require('sanitize-html')
 // const pluginRespimg = require( "../eleventy-respimg" );
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
-
+const slugify = require('slugify');
 
 require('dotenv').config()
 
@@ -91,6 +91,7 @@ module.exports = function(config) {
         let filteredPosts = posts.filter(post => post.data.categories.includes(category));
         let categoryDetails =  { 
           'title': category,
+          'slug': slugify(category),
           'posts': [ ...filteredPosts ]
         };
         sortedPosts.push(categoryDetails);      

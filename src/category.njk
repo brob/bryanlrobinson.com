@@ -3,7 +3,7 @@ pagination:
     data: collections.categories
     alias: category
     size: 1
-permalink: /blog/category/{{ category.title | slug }}.html
+permalink: /blog/category/{{ category.slug }}.html
 ---
 {% extends "layouts/blog.njk" %}
 {% block pageTitle %}
