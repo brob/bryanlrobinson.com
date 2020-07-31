@@ -19,11 +19,13 @@ adSpace:
 
 ![How do you stop Liquid and Nunjucks tags from rendering? Raw](/images/raw-topper.png)
 
-If you write a technical blog and use 11ty as your static site generator of choice you might run into a conundrum: *How do you show Liquid or Nunjucks template code in your code blocks?*
+If you write a technical blog and use 11ty (or Jekyll ... or just use Liquid or Nunjucks) as your static site generator of choice you might run into a conundrum: *How do you show Liquid or Nunjucks template code in your code blocks?*
 
-Whether you use the official syntax highlighting plugin, a custom Prism plugin or something else you'll run into this issue. When you write template code in one of these highlight blocks, your template engine will attempt to render your code instead of displaying it as a string.
+Whether you use the official syntax highlighting plugin, a custom PrismJS plugin or something else you'll run into this issue. You might think your PrismJS plugin is acting up. You might think 11ty is hiding content from you. You might not even know what to Google! I've been there and I've also helped a couple other people figure out the root cause and fix it.
 
-It's not readily obvious how to get around this. To make this work, you need to wrap the tags (or everything) in the `raw` paired shortcode.
+It's not readily obvious what's causing this issue or how to fix it. The issue is that Liquid and Nunjucks are trying to interpolate and render the tags you put in your highlight block. To make this work, we need to tell the templating engine that it needs to *NOT* fetch the data and render.
+
+To make this work, you need to wrap the tags (or everything) in the `raw` paired shortcode.
 
 ## The Default Behavior for Liquid and Nunjucks
 
