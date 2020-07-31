@@ -75,3 +75,7 @@ If we insert the `raw` tag, our code will render as a code block that contains t
     {% endraw %}
 
 {% endhighlight %}
+
+We now have exactly what we want! 
+
+It took me a lot of research to figure this out when I first started having this issue. It's also, surprisingly a frequently asked question for me. It's a relatively small use case, so there's not a lot of content around it, so Googling isn't great. Hopefully folks will find this and not give up on technical blogging because of it!
