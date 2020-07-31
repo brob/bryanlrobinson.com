@@ -2,10 +2,12 @@
 layout: "layouts/post.njk"
 title: "How to show your template code in 11ty blog posts"
 categories:
-  - Life
+  - jamstack
+  - javascript
+  - 11ty
 baseLayout: container--right
 description: "If you write a technical blog and use 11ty as your static site generator of choice you might run into a conundrum: How do you show Liquid or Nunjucks template code in your code blocks."
-featuredImg: /images/michigan-sanity.png
+featuredImg: /images/raw-promo.png
 featuredLarge: true
 templateEngineOverride: njk, md
 adSpace: 
@@ -14,6 +16,8 @@ adSpace:
   linkText: Listen Now!
   linkUrl: https://thatsmyjamstack.com
 ---
+
+![How do you stop Liquid and Nunjucks tags from rendering? Raw](/images/raw-topper.png)
 
 If you write a technical blog and use 11ty as your static site generator of choice you might run into a conundrum: *How do you show Liquid or Nunjucks template code in your code blocks?*
 
