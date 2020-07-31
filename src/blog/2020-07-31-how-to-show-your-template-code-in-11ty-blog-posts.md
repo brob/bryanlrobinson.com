@@ -53,6 +53,8 @@ Let's take a simple example of a showcasing a template loop. Either using markdo
 
 **WOOOOPS!**
 
+That's not what we want! That's just a list of posts... but it *IS* what should be rendered by those tags... Imagine it were something less obvious. Imagine you had a conditional expression? It might not show anything. Imagine you had template syntax that didn't work in the current context. Your terminal would light up with errors and you might not know why.
+
 ## How do we fix a template engine like Liquid or Nunjucks from doing it's job?
 
 We use a tag provided by both languages to fix this specific issue. The `Raw` tag will take any string and tell the templating engine that this is not to be rendered as a template tag or variable.
