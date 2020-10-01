@@ -62,7 +62,7 @@ Our navigation has been abstracted out to be used in our `header.njk` file. Let'
         <li><a class="nav__item" href="/work-with-bryan">Work</a></li>
         <li><a class="nav__item" href="/about">About</a></li>
         <li><a class="nav__item" href="/contact">Contact</a></li>
-    </div>
+    </ul>
 </nav>
 {% endhighlight %}
 
