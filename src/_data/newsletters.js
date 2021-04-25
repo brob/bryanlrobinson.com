@@ -19,10 +19,12 @@ const query = `*[_type == "newsletter"] {
 
 
 function prepNewsletter(data) {
+    data.date = new Date(data.publishDate)
     data.opening = blocksToHtml({
         blocks: data.opening,
         serializers: serializers
       })
+
     return data
 }
 
