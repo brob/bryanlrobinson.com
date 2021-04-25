@@ -1,13 +1,14 @@
 {% extends "layouts/base.njk" %}
 {% set contentClass = "post-content" %}
 {% set layoutStyles = [ 'articles.css', 'components/article-promo.css', 'components/ad-space.css', 'components/related-list.css' ]%}
+{% set date = post.date or page.date  %}
 
 {% block banner %}
 <h1 class="banner__title">{{ title }}</h1>
 {% if subhead %}
     <h2>{{ subhead }}</h2>
 {% endif %}
-<time datetime="{{ date  }}">{{ date  }}</time>
+<time datetime="{{ date }}">{{ date | postDate }}</time>
 {% if categories %}
 <ul class="category-list">
 {% for category in categories %}
