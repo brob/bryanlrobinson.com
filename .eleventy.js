@@ -34,7 +34,6 @@ module.exports = function(config) {
  // Import prior to `module.exports` within `.eleventy.js`
 
     config.addFilter("postDate", (dateObj) => {
-      console.log(dateObj)
       return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     });
     config.addTransform('htmlmin', htmlMinTransform);
