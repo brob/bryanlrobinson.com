@@ -8,6 +8,7 @@ const serializers = {
 }
 const query = `*[_type == "blog"] | order(publishDate desc){
   ...,
+  "featuredImg": featuredImg.asset->url,
   body[]{
     ..., 
     asset->{

@@ -84,6 +84,8 @@ module.exports = function(config) {
         const posts = collection.getFilteredByTag('posts');
         const postsWithUpdatedDates = posts.map(item => {
             item.date = item.data.post ? new Date(item.data.post.date) : item.date
+            item.featuredLarge = item.data.post ? item.data.post.featuredLarge : item.featuredLarge
+            item.featuredImg = item.data.post ? item.data.post.featuredImg : item.featuredImg
             return item
         })
         const sortedPosts = postsWithUpdatedDates.sort((a, b) => b.date - a.date)
