@@ -80,29 +80,16 @@ module.exports = function(config) {
     })
 
 
-    config.addFilter("date", dateFilter);
     config.addCollection('posts', collection => {
-      const posts = collection.getFilteredByTag('posts');
-
-      module.exports = function(config) {
-        config.addPassthroughCopy("style.css");
-    
-        config.addCollection('posts', collection => {
-            const posts = collection.getFilteredByTag('post');
-            const postsWithUpdatedDates = posts.map(item => {
-                item.date = item.data.post ? new Date(item.data.post.date) : item.date
-                return item
-            })
-            const sortedPosts = postsWithUpdatedDates.sort((a, b) => b.date - a.date)
-            console.log("Sorted posts", sortedPosts)
-            return sortedPosts;
-        });
-    }
-      const sortedPosts = posts.sort((a, b) => b.date - a.date)
-      return sortedPosts;
-        return collection.getFilteredByTag('posts').reverse();
+        const posts = collection.getFilteredByTag('posts');
+        const postsWithUpdatedDates = posts.map(item => {
+            item.date = item.data.post ? new Date(item.data.post.date) : item.date
+            return item
+        })
+        const sortedPosts = postsWithUpdatedDates.sort((a, b) => b.date - a.date)
+        return sortedPosts;
     });
-
+  
     config.addCollection('categories', collection => {
       let categories = [];
       let sortedPosts = [];
