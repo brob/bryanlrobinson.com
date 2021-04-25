@@ -8,6 +8,7 @@
 {% if subhead %}
     <h2>{{ subhead }}</h2>
 {% endif %}
+{{ date |postDate | log}}
 <time datetime="{{ date }}">{{ date | postDate }}</time>
 {% if categories %}
 <ul class="category-list">
