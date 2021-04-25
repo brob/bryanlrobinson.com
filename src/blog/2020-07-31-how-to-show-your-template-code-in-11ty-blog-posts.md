@@ -16,7 +16,6 @@ adSpace:
   linkText: Listen Now!
   linkUrl: https://thatsmyjamstack.com
 ---
-
 ![How do you stop Liquid and Nunjucks tags from rendering? Raw](/images/raw-topper.png)
 
 If you write a technical blog and use 11ty (or Jekyll ... or just use Liquid or Nunjucks) as your static site generator of choice you might run into a conundrum: *How do you show Liquid or Nunjucks template code in your code blocks?*
