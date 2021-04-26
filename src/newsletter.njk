@@ -1,0 +1,24 @@
+---
+pagination: 
+    data: newsletters
+    size: 1
+    alias: post
+    addAllPagesToCollections: true
+tags:
+    - posts
+categories: 
+    - newsletter
+permalink: "/blog/{{ post.title | slug }}/index.html"
+layout: "layouts/post.njk"
+eleventyComputed:
+  title: "{{ post.title }}"
+---
+
+{{ post.opening | safe }}
+{% if post.bookmarks %}
+    <h3>Links from the newsletter</h3>
+    {% for item in post.bookmarks %}
+        <h3><a href="{{ item.url }}">{{ item.pageTitle }}</a></h3>
+        <p>{{ item.description }}</p>
+    {% endfor %}
+{% endif %}

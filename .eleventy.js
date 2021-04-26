@@ -8,6 +8,7 @@ const sanitizeHTML = require('sanitize-html')
 // const pluginRespimg = require( "../eleventy-respimg" );
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 const slugify = require('slugify');
+const { DateTime } = require("luxon");
 
 require('dotenv').config()
 
@@ -30,6 +31,11 @@ module.exports = function(config) {
 // Have class option
 // Have option for automatic domain prepend
 
+ // Import prior to `module.exports` within `.eleventy.js`
+
+    config.addFilter("postDate", (dateObj) => {
+      return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    });
     config.addTransform('htmlmin', htmlMinTransform);
 
     config.cloudinaryCloudName = 'brob';
@@ -74,11 +80,18 @@ module.exports = function(config) {
     })
 
 
-    config.addFilter("date", dateFilter);
     config.addCollection('posts', collection => {
-        return collection.getFilteredByTag('posts').reverse();
+        const posts = collection.getFilteredByTag('posts');
+        const postsWithUpdatedDates = posts.map(item => {
+            item.date = item.data.post ? new Date(item.data.post.date) : item.date
+            item.featuredLarge = item.data.post ? item.data.post.featuredLarge : item.featuredLarge
+            item.featuredImg = item.data.post ? item.data.post.featuredImg : item.featuredImg
+            return item
+        })
+        const sortedPosts = postsWithUpdatedDates.sort((a, b) => b.date - a.date)
+        return sortedPosts;
     });
-
+  
     config.addCollection('categories', collection => {
       let categories = [];
       let sortedPosts = [];

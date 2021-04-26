@@ -3,7 +3,6 @@
     'banner.css'
 ] %}   
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,10 +50,10 @@
       <meta name="twitter:description" content="{{ description | escape }}" />
       {% endif %}
 
-      {% if featuredImg %}
-        <meta name="twitter:image" content="{{ site.url }}{{ featuredImg }}" />
+      {% if post.featuredImg or featuredImg %}
+        <meta name="twitter:image" content="{% if featuredImg %}{{ site.url }}{% endif %}{{ post.featuredImg or featuredImg }}" />
       {% endif %}
-      {% if featuredLarge %}
+      {% if post.featuredLarge or featuredLarge %}
         <meta name="twitter:card" content="summary_large_image" />
       {% endif %}
       <link rel="manifest" href="/manifest.json">
